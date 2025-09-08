@@ -1,0 +1,7 @@
+[
+  ["npc_jhpcs","surprise","JHPCS","啊……啊？",0,true,false],
+  ["npc_jhpcs","surprise","JHPCS","虚……虚空裂缝？？",0,false,false],
+  ["npc_jhpcs","think","JHPCS","不应该出现在这里才对啊……",0,false,false],
+  ["npc_jhpcs","think","JHPCS","看来我们不得不进去一探究竟了。",0,false,false],
+  ["npc_jhpcs","smile","JHPCS","里面的环境危险难测，可要注意安全啊。",0,false,false,["嗯，会的",0]]
+]

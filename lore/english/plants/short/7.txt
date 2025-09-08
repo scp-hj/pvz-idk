@@ -1,0 +1,4 @@
+Fume Shroom
+
+Shoots penetrating fumes that covers the entire lane.
+Great for levels with a low of low-hp zombies.

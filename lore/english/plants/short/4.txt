@@ -1,0 +1,4 @@
+Snow Pea
+
+Shoots snow peas that chills zombies, slowing them down.
+Allows more time for other plants to attack.

@@ -1,0 +1,2 @@
+After planting a plant, it will fall into sleep,
+regardless of its type or the time.

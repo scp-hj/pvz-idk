@@ -1,0 +1,13 @@
+[
+  ["npc_jhpcs", "think", "JHPCS", "Well...", 0, true, false],
+  ["npc_jhpcs", "smile", "JHPCS", "Strangely enough, this isn't my first time in a 'plants vs zombies' ruled world.", 0, false, false],
+  ["npc_jhpcs", "smile", "JHPCS", "But each Plants vs. Zombies-like world seems to have slight variations in its 'rules'.", 0, false, false],
+  ["npc_jhpcs", "smile", "JHPCS", "For example, regular sun might change from 25 to 50, but the first wave comes extremely fast, and the number of zombies increases;", 0, false, false],
+  ["npc_jhpcs", "smile", "JHPCS", "Being able to stack different plants to hybridize and create hybrid plants with various appearances and functions;", 0, false, false],
+  ["npc_jhpcs", "smile", "JHPCS", "And as you can see, this world seems to have its own unique rules too...", 0, false, false],
+  ["npc_jhpcs", "think", "JHPCS", "The 'Grafting' mechanism... Plant Evolution... Gadgets... probably more to come later.", 0, false, false],
+  ["npc_jhpcs", "wink", "JHPCS", "Oh, and the abstract art style and extremely low frame rate 'animations' count as one too.", 0, false, false],
+  ["npc_jhpcs", "smile", "JHPCS", "Whenever I gather rules like these, I jot them down. They might come in handy someday.", 0, false, false],
+  ["npc_jhpcs", "surprise", "JHPCS", "Oh my, I've been talking for so long!", 0, false, false],
+  ["npc_jhpcs", "wink", "JHPCS", "Let's continue tackling levels~", 0, false, false]
+]

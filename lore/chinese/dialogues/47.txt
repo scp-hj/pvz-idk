@@ -1,0 +1,7 @@
+[
+  ["npc_sprout","smile","小芽","还是让你捉到人家了呢……",0,true,false],
+  ["npc_sprout","smile","小芽","这可不是一件容易事哦~",0,true,false],
+  ["npc_sprout","smile","小芽","也没什么，就是来这散散心啥的，人家很快就会走的啦。",0,true,false],
+  ["npc_sprout","smile","小芽","嗯，你这么有耐心，就把这个人家找到的种子送给你啦~它长得跟我这么像，可别搞混了哦~",0,true,false],
+  ["npc_sprout","wink","小芽","我也该走了，那就再见啦~我们以后肯定还会见面的……",0,true,false]
+]

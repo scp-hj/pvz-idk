@@ -1,0 +1,97 @@
+Thank you for even downloading this stupid little fangame of mine!
+竟然还有人下载了我这个垃圾pvz同人游戏，真的太感动了……
+This txt file contains a brief introduction to everything to need to know about pvz idk.
+基本上你玩这个破游戏需要知道的东西都在这了
+
+1.basic elements 游戏元素
+-zombies(big surprise)
+-僵尸（只要你不是十年脑血栓应该都知道）
+  pvz idk adds resistance to different types of dmg(e.g. physical, ice, fire, poison) to zombies and their armors, reducing or increase the dmg they take of that type
+ pvz idk 中，僵尸和防具拥有对某些属性的伤害（如物理、冰、火、毒）的‘抗性’，令它们受到更多或更少对应属性的伤害
+  currently most armors reduces the physical dmg taken and metal armors increases the electrical dmg taken
+ 目前，大部分防具收到的物理伤害都会被减少，而金属防具收到的雷电伤害会上升
+-plants(no way)
+-植物（还用再说吗）
+  pvz idk adds 2 new gimmicks to plants- grafting and plant revolution
+  pvz idk 中有关植物的新机制有嫁接和植物进化
+  grafting: a plant can be planted onto another plant with the same family, with lower costs
+ 嫁接：你可以把一个植物直接种在另一个同家族植物的上面，花费阳光减少
+  plant revolution: certain plants get this effects after grafting onto another plant. they get flames around them and takes less dmg. they also gets some special effects. plant revolution effect ends after a certain amount of time or when there's no zombie in the plant's range.
+ 植物进化：在被嫁接到一个其他植物上之后，一些植物会获得‘植物进化’效果，（有火焰特效），持续一段时间，植物攻击范围内没有目标效果也会消失。期间植物获得减伤以及特殊效果。
+-power-up
+-妙具
+  the idea comes from the gadgets in brawl stars... you click the power-up button (sometimes selecting something )and something happens
+ 灵感来源于荒野的妙具。玩家点击妙具后，有时会被要求选择一个目标，然后就会有一些效果（说了等于没说）
+  power-ups cost nothing to use in-game, has recharge and a max use time
+ 妙具在局内使用无需消耗资源，但有冷却和使用上限
+
+2.zombies 僵尸
+ -browncoat 普僵  200HP
+   walks fast, but deals low dmg
+  高速低攻
+  -conehead 路障 400+200HP
+   leaves cone obstacle after death that spawns another conehead if not destroyed quickly
+   亡语：留下一个路障障碍物，若一段时间内未被摧毁则原地生成一个路障
+   -buckethead 铁桶 600+200HP
+      after death, gives all zombies in 3x3 a bucket
+   亡语：给所有3x3范围内的僵尸戴上铁桶
+   -pogo 跳跳僵尸 300HP
+    jumps when advancing, ignores plants and dodging some missles
+    跳着前进，无视植物且有时能躲避子弹
+   -football 大爷 800+200HP
+    P.S.the helmet has extremely high physical resistance 头盔看着血少但抗性高
+      just runs fast and eats fast 跑得快，啃得快
+   -screendoor zombie 铁门僵尸 1500+200HP
+   same as vanilla
+   和原版一样
+   -jeff zombie 重甲僵尸 1500+800+600+400+200HP
+   slow but extremely tanky and destory plants extremely fast
+   行动缓慢，但血量惊人且牙口很好
+   -flag zombie 旗帜僵尸 1500+800+1200HP
+   has a screendoor, a bucket, and a high base hp too. walk fast
+   钢门铁桶旗帜（囍）而且本体血量也很高，走路速度较快
+     flag zombies has special effects according to its kind:旗帜僵尸根据种类有着各种特殊效果：
+     heal flag 治疗旗帜 heal all zombies slightly with a short duration 每隔一段时间就稍微治疗场上的所有僵尸
+     turbo flag 疾驰旗帜 make all zombies move faster 让僵尸走路变快
+     aggro flag 快攻旗帜（飞舞） increase the atk of all zombies 让僵尸牙口变好
+     deadly flag 致死旗帜（飞舞） increase the atk of all zombies to 9999999 让所有僵尸可以秒植物
+     revive flag 重生旗帜（烦人） heal all zombies to maximum every now and then 每个一段时间让所有僵尸恢复至满血
+     grave flag 墓碑旗帜 every now and then summons a grave 每隔一段时间召唤一个墓碑
+     summon flag 召唤旗帜 every now and then summons a 'special' zombie 每隔一段时间召唤一个‘特殊’僵尸
+     crowd flag 群体旗帜（真神） doubles or triple the zombie amount 令每波僵尸数目翻倍
+
+3. plants 植物（不是新植物就只讲更改的部分）
+    - peashooter 豌豆射手 75 sun 豌豆家族
+    increase atk duration, drastically reducing recharge
+    攻速降低 冷却大幅降低
+    - sunflower 炮灰葵 50 sun 花家族
+       increase hp
+       血量提升
+    - repeater 双发射手 225 sun 豌豆家族
+       greatly increase atk speed
+       攻速大幅提升
+    - snow pea 寒冰射手 200sun 豌豆家族
+       slightly increase atk speed
+    稍微提升攻速
+    - puff shroom 小喷菇 0 sun 蘑菇家族
+       increased recharge, after attacking for a certain amount of time duplicates
+    增加冷却，且攻击达一定次数后原地再长出个小喷
+    - sun shroom 阳光菇 25 sun 蘑菇家族
+        increase production speed after growing
+     长大后产速提升
+    - fume shroom 大喷菇 175sun 蘑菇家族
+        now attacks entire lane
+     攻击整行
+    - milk pea 牛奶豌豆 175 sun 豌豆家族
+        shoots milk buckets that buffs zombies, but they immediately dies after 5th milk
+     射出增强僵尸的牛奶，但僵尸被击中第5次后直接死亡
+    - 好了我懒得写了自己去试吧 ill countiue this part later 机枪和猫尾草有很酷炫的植物进化效果
+
+4. power-ups 妙具
+    - nutcracker 胡桃夹子
+    select a plant and destroys it, stunning all zombies. the stun will be longer with plants of higher hp.
+    选择一个植物并摧毁之，根据植物血量眩晕全场僵尸
+   - blizzard 暴风雪
+       chill all plant, but when they next attack/produce they instead de-chilled themselves and shoots a snowball that freezes zombies and can pierce them
+    令所有植物冷冻（攻速减慢），但它们下次攻击、生产时会解冻并射出无限穿透僵尸并冻结它们的雪球
+        

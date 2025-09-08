@@ -1,0 +1,5 @@
+[
+  ["npc_jhpcs", "think", "JHPCS", "Alternating day and night levels...", 0, true, false],
+  ["npc_jhpcs", "smile", "JHPCS", "Quite rare.", 0, false, false],
+  ["npc_jhpcs", "smile", "JHPCS", "Luckily, the Puff-shroom is strong enough. Feels like the early pressure in night levels is actually smaller than in daytime ones.", 0, false, false]
+]

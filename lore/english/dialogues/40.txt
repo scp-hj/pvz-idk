@@ -1,0 +1,10 @@
+[
+  ["npc_unicorn", "1", "Little White Horse", "Warrior~ You came after all~", 0, true, false],
+  ["npc_unicorn", "1", "Little White Horse", "That brown square on the left is the entrance to the Daily Challenge~", 0, false, false],
+  ["npc_unicorn", "1", "Little White Horse", "A different level awaits you every day~", 0, false, false],
+  ["npc_unicorn", "1", "Little White Horse", "If you succeed in the challenge~ you can get 1 Croma Credit and 200 coins~", 0, false, false],
+  ["npc_unicorn", "1", "Little White Horse", "The rewards even doubled on weekends~", 0, false, false],
+  ["npc_unicorn", "1", "Little White Horse", "Even if you can't beat it~ it's no problem~ After all, it's through repeated practice~ that willpower and ability improve~ Don't worry, you can retry unlimited times at any time~", 0, false, false],
+  ["npc_unicorn", "1", "Little White Horse", "After you earn enough Chroma Credits, you can use them to unlock these plants on the right~", 0, false, false],
+  ["npc_unicorn", "1_wink", "Little White Horse", "You must be eager to try now~ Let's get started~", 0, false, false]
+]

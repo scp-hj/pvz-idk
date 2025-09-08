@@ -1,0 +1,3 @@
+[
+  ["npc_jhpcs","wink","JHPCS","嗯，那继续去做你在做的事吧~",0,true,false]
+]

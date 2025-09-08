@@ -1,0 +1,4 @@
+Nutcracker
+
+Destroys a plant. Stuns all zombies
+according to its remaining hp.

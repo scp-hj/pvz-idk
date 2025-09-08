@@ -1,0 +1,7 @@
+Power Flower
+
+Produces sun and buffs plants around him.
+
+Plant evolution:
+Shoots a beam for 5s. Produce sun and buff plants
+around when it deals dmg.

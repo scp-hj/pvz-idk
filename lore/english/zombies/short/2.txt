@@ -1,0 +1,6 @@
+Conehead Zombie
+
+Has more hp than a regular browncoat,
+and leaves a cone obstacle when dead.
+Destroy the cone quickly or it will
+spawn another conehead.

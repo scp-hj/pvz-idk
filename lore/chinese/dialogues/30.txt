@@ -1,0 +1,6 @@
+[
+  ["npc_unicorn","1","???","你们好~",0,true,false],
+  ["npc_jhpcs","surprise","JHPCS","昂？你又是何人？",1,true,"npc_unicorn_1.png"],
+  ["npc_unicorn","1","???","我是圣光派来的使者~",0,true,"npc_jhpcs_surprise.png"],
+  ["npc_unicorn","1","???","全名是‘璀璨虹彩之尾、啃食云冠与光隙的、受七重天国蜜糖赐福的、圣·小叽咕·虹焰鬃·奥珀莉安-曦光-晨星嗡·啃得叽二世’~",0,false,"npc_jhpcs_surprise.png",["……",31],["那就叫你阳光彩虹小白马吧。",31]]
+]

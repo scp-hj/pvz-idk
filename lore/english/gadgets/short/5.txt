@@ -1,0 +1,6 @@
+Last Stand
+
+Destroys all plants on lawn and
+convert them to sun.
+Immediately finish the recharge for all plants.
+For the next 10s, no recharge from planting plants.

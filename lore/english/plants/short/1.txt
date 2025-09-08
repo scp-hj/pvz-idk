@@ -1,0 +1,4 @@
+Peashooter
+
+Shoot peas to attack zombies from a distance.
+Short recharge, low cost, great base to graft stronger peas on.

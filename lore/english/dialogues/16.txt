@@ -1,0 +1,4 @@
+[
+  ["npc_jhpcs", "think", "JHPCS", "In this situation... the only thing to do is probably stack the newly obtained Power Flower onto the Sunflower.", 0, true, false],
+  ["npc_jhpcs", "smile", "JHPCS", "Pick up the Power Flower, and you should see a shovel icon appear on the Sunflower. That should mean it can be stacked.", 0, false, false]
+]

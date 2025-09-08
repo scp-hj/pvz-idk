@@ -1,0 +1,13 @@
+[
+  ["npc_jhpcs","think","JHPCS","嗯...",0,true,false],
+  ["npc_jhpcs","smile","JHPCS","说来奇怪，我也不是第一次来到‘种植物打僵尸’规则的世界了。",0,false,false],
+  ["npc_jhpcs","smile","JHPCS","不过每个像这样，植物大战僵尸的世界，‘规则’似乎都会有少许变化。",0,false,false],
+  ["npc_jhpcs","smile","JHPCS","例如普通阳光从25变成50，但第一波出怪时间极快，僵尸数量上升；",0,false,false],
+  ["npc_jhpcs","smile","JHPCS","可以将不同的植物叠种，总而杂交出外貌功能各异的杂交植物；",0,false,false],
+  ["npc_jhpcs","smile","JHPCS","而如你所见，这个世界似乎也有着独属于自己的规则……",0,false,false],
+  ["npc_jhpcs","think","JHPCS","‘嫁接’机制……植物进化……妙具……说不定之后还会有更多。",0,false,false],
+  ["npc_jhpcs","wink","JHPCS","对了，抽象的画风和帧率极低的‘动画’也算一项。",0,false,false],
+  ["npc_jhpcs","smile","JHPCS","每次收集到诸如此类的规则，我都会记下来，说不定之后哪天就能用上呢。",0,false,false],
+  ["npc_jhpcs","surprise","JHPCS","哎呀，怎么已经说这么久了！",0,false,false],
+  ["npc_jhpcs","wink","JHPCS","我们继续闯关吧~",0,false,false]
+]

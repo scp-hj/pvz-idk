@@ -1,0 +1,4 @@
+[
+  ["npc_jhpcs","think","JHPCS","直觉告诉我前面那关不是普通关卡……",0,true,false],
+  ["npc_jhpcs","think","JHPCS","感觉是和什么机制有关……待我研究下先……",0,false,false]
+]

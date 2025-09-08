@@ -1,0 +1,5 @@
+[
+  ["npc_jhpcs", "smile", "???", "Hello there~", 0, true, false],
+  ["npc_jhpcs", "smile", "???", "My name is JHPCS.", 0, false, false],
+  ["npc_jhpcs", "smile", "JHPCS", "You're a traveler journeying through the void too, right?", 0, false, false, ["The void?", 2], ["A traveler?", 2]]
+]

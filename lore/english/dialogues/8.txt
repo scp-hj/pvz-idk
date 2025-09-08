@@ -1,0 +1,7 @@
+[
+  ["npc_unicorn", "1", "Little White Horse", "Chroma credits are rewards for brave warriors who dare to face challenges!~", 0, true, false],
+  ["npc_unicorn", "1", "Little White Horse", "The dense core of a planetary heart~ bathed in the rainbow's holy light~ thus shimmering with a seven-colored glow~", 0, false, false],
+  ["npc_unicorn", "1", "Little White Horse", "They can be used to purchase Chromatic Plants, warriors shaped by love and hope~", 0, false, false],
+  ["npc_unicorn", "1", "Little White Horse", "More services are in preparation~ Stay tuned~", 0, false, false],
+  ["npc_unicorn", "1", "Little White Horse", "Anything else you'd like to ask?~", 0, true, false, ["Chroma credits", 8], ["Holy Light", 9], ["Daily Challenge", 10], ["How did you get here?", 11], ["Nothing", 12]]
+]

@@ -1,0 +1,8 @@
+[
+  ["npc_jhpcs","think","JHPCS","这样嘛……",0,true,false],
+  ["npc_jhpcs","smile","JHPCS","没事，无妨。",0,false,false],
+  ["npc_jhpcs","smile","JHPCS","我的旅程路阻且长，能遇到其他‘真实’的生灵的机会，更是少之又少。",0,false,false],
+  ["npc_jhpcs","smile","JHPCS","既然都已相遇，那不如与我结伴同行一阵吧。",0,false,false],
+  ["npc_jhpcs","smile","JHPCS","……说不定，你还能找到有关自己来历的更多资讯呢。",0,false,false],
+  ["npc_jhpcs","wink","JHPCS","前进吧！开启下一关~",0,false,false]
+]

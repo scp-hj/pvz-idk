@@ -1,0 +1,11 @@
+[
+  ["npc_unicorn", "1", "Little White Horse", "That works too~ Names are but surface~ The heart is key~", 0, true, "npc_jhpcs_surprise.png"],
+  ["npc_jhpcs", "think", "JHPCS", "Holy Light? Never heard of it...", 1, true, "npc_unicorn_1.png"],
+  ["npc_jhpcs", "think", "JHPCS", "Then why are you here? Did you cause this void rift?", 1, false, "npc_unicorn_1.png"],
+  ["npc_unicorn", "1", "Little White Horse", "Quite the opposite~ I'm here to deal with them~", 0, true, "npc_jhpcs_think.png"],
+  ["npc_jhpcs", "surprise", "JHPCS", "Oh?", 1, true, "npc_unicorn_1.png"],
+  ["npc_jhpcs", "surprise", "JHPCS", "Wait... 'them'?", 1, false, "npc_unicorn_1.png"],
+  ["npc_unicorn", "1", "Little White Horse", "Yes, you heard right~ It's not just here; similar rifts have appeared in many corners of this world~", 0, true, "npc_jhpcs_surprise.png"],
+  ["npc_unicorn", "1", "Little White Horse", "The exact cause~ we haven't figured out yet~", 0, false, "npc_jhpcs_surprise.png"],
+  ["npc_unicorn", "1", "Little White Horse", "Hey, you! Yes, you~", 0, false, "npc_jhpcs_surprise.png", ["Me, me?", 32]]
+]

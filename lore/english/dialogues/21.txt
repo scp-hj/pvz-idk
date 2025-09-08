@@ -1,0 +1,6 @@
+[
+  ["npc_jhpcs", "smile", "JHPCS", "The explosion damage from this Potato Mine after it surfaces seems quite high.", 0, true, false],
+  ["npc_jhpcs", "smile", "JHPCS", "For this level, we should use Wall-nuts and Iceberg Lettuce to stall the zombies as much as possible and try to group them together.", 0, false, false],
+  ["npc_jhpcs", "wink", "JHPCS", "And then finally... BOOM~~~", 0, false, false],
+  ["npc_jhpcs", "wink", "JHPCS", "Solve them all in one go~", 0, false, false]
+]

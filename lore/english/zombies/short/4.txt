@@ -1,0 +1,4 @@
+Pogo Zombie
+
+Moves by bouncing and ignores most plants.
+Is able to dodge some projectile.

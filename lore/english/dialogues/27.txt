@@ -1,0 +1,7 @@
+[
+  ["npc_jhpcs", "surprise", "JHPCS", "Huh... huh?", 0, true, false],
+  ["npc_jhpcs", "surprise", "JHPCS", "A... a void rift??", 0, false, false],
+  ["npc_jhpcs", "think", "JHPCS", "It shouldn't be appearing here...", 0, false, false],
+  ["npc_jhpcs", "think", "JHPCS", "Seems we have no choice but to go in and investigate.", 0, false, false],
+  ["npc_jhpcs", "smile", "JHPCS", "The environment inside is dangerous and unpredictable, so be careful.", 0, false, false, ["I will.", 0]]
+]

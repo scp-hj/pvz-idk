@@ -1,0 +1,5 @@
+Imp
+
+Low hp zombie that moves fast.
+Has a small hitbox and can avoid being
+hit by most straight attacks.

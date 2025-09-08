@@ -1,0 +1,4 @@
+[
+  ["npc_jhpcs", "think", "JHPCS", "Now that Sunflower is unlocked, we can probably follow the standard PVZ strategy...", 0, true, false],
+  ["npc_jhpcs", "smile", "JHPCS", "Start by stockpiling Sunflowers, use Peashooters for output once zombies appear, and use Puff-shrooms appropriately to stall. That should do it.", 0, false, false]
+]

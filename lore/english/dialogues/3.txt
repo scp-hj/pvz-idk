@@ -1,0 +1,8 @@
+[
+  ["npc_jhpcs", "think", "JHPCS", "I see…", 0, true, false],
+  ["npc_jhpcs", "smile", "JHPCS", "It's fine, no problem.", 0, false, false],
+  ["npc_jhpcs", "smile", "JHPCS", "My journey is long and fraught with obstacles, and chances to encounter other 'real' beings are few and far between.", 0, false, false],
+  ["npc_jhpcs", "smile", "JHPCS", "Since we've met, why not travel together for a while?", 0, false, false],
+  ["npc_jhpcs", "smile", "JHPCS", "……Who knows, you might even find more information about your own origins.", 0, false, false],
+  ["npc_jhpcs", "wink", "JHPCS", "Onwards! Let's start the next level~", 0, false, false]
+]

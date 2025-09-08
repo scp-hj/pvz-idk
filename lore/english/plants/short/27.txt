@@ -1,0 +1,6 @@
+Lazy Chomper
+
+Most plants can be planted on it.
+Every now and then, swallow the plant that is planted on it.
+The body the of plant disappear but its effect still remains.
+Heal and gain max hp according to the max hp of swallowed plant.

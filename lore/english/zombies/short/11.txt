@@ -1,0 +1,5 @@
+Paper-throwing Zombie
+
+Slightly more hp than a basic,
+throws paper balls at plant from a distance
+dealing chip damage.

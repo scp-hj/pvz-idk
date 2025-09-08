@@ -1,0 +1,6 @@
+[
+  ["npc_unicorn", "1", "Little White Horse", "A challenge realm that refreshes daily, to temper the will and courage of warriors!~", 0, true, false],
+  ["npc_unicorn", "1", "Little White Horse", "Upon success, you will receive Chroma Credits and coins as rewards~", 0, false, false],
+  ["npc_unicorn", "1", "Little White Horse", "One's wisdom is always limited. If you encounter difficulties, feel free to seek advice from others~", 0, false, false],
+  ["npc_unicorn", "1", "Little White Horse", "Anything else you'd like to ask?~", 0, true, false, ["Chroma Credtis", 8], ["Holy Light", 9], ["Daily Challenge", 10], ["How did you get here?", 11], ["Nothing", 12]]
+]

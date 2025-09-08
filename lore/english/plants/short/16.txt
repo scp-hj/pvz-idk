@@ -1,0 +1,4 @@
+Fire Peashooter
+
+Shoots fire peas that deals slight AOE dmg.
+Still figuring out how to buff it till this day.

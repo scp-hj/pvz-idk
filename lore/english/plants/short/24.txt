@@ -1,0 +1,5 @@
+Fireweed
+
+After a short delay, explodes and shoots a lot of
+magma droplets forward. They deal dmg and makes
+zombies speed up while taking continuous dmg.

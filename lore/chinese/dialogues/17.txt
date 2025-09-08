@@ -1,0 +1,9 @@
+[
+  ["npc_jhpcs","wink","JHPCS","伙伴，干得漂亮！",0,true,false],
+  ["npc_jhpcs","think","JHPCS","据我的研究，这个机制名为‘嫁接’。",0,false,false],
+  ["npc_jhpcs","smile","JHPCS","种植植物时，可以将其叠种在已有的同种族植物上，在短暂动画后取代之。",0,false,false],
+  ["npc_jhpcs","think","JHPCS","种族啊……就是植物的种类吧，例如豌豆、花朵、蘑菇，这些都是种族。",0,false,false],
+  ["npc_jhpcs","wink","JHPCS","这么做不仅能无风险地替换前排植物，更能减免该植物的冷却时间，并返还原植物的部分阳光，挺实惠的呢。",0,false,false],
+  ["npc_jhpcs","wink","JHPCS","而且，对于某些植物，例如刚才的能量花，嫁接更可激发它的‘植物进化’效果！",0,false,false],
+  ["npc_jhpcs","wink","JHPCS","好好运用嫁接和植物进化机制，说不定战斗就能事半功倍啦~",0,false,false]
+]

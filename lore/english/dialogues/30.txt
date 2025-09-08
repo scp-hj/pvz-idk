@@ -1,0 +1,6 @@
+[
+  ["npc_unicorn", "1", "???", "Greetings~", 0, true, false],
+  ["npc_jhpcs", "surprise", "JHPCS", "Huh? And who might you be?", 1, true, "npc_unicorn_1.png"],
+  ["npc_unicorn", "1", "???", "I am an envoy sent by the Holy Light~", 0, true, "npc_jhpcs_surprise.png"],
+  ["npc_unicorn", "1", "???", "My full name is 'The Lustrous Rainbow Tail, Devourer of Cloud-Crowns and Light-Clefts, Blessed by the Sevenfold Celestial Nectar, Saint Giggu Mane of Flaming Rainbows Opalienne-Dawnlight-Morningstarbuzz·Kernediggi the Second'~", 0, false, "npc_jhpcs_surprise.png", ["......", 31], ["Little while pony it is.", 31]]
+]

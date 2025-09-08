@@ -1,0 +1,5 @@
+Plantern
+
+Lights up a 3x3 area around her.
+When destroy: stun all zombies for 3s,
+and lights up all tiles on the lawn.

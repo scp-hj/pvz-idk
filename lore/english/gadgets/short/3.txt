@@ -1,0 +1,5 @@
+Magical Randomness
+
+Select a plant.
+For the rest of the level, it shoots
+random projectiles instead.

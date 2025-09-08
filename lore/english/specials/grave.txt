@@ -1,0 +1,4 @@
+Graves will spawn on the lawn with time.
+They have a certain hp and would block non-piercing and non-thrown plant projectiles.
+They number of graves that would spawn each time increments with level progress.
+When a huge wave spawns, each grave will spawn 1 random basic zombie.

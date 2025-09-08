@@ -1,0 +1,7 @@
+[
+  ["npc_jhpcs","think","JHPCS","‘妙具’？这种能力，我倒没在植物大战僵尸里见过……",0,true,false],
+  ["npc_jhpcs","think","JHPCS","倒是有一款游戏里角色其中一个技能与其的设定相似……那游戏叫什么我也记不清了，似乎是‘荒’字开头的。",0,false,false],
+  ["npc_jhpcs","smile","JHPCS","看这个妙具的描述，使用后就可以以摧毁一颗植物为代价，眩晕全场僵尸。",0,false,false],
+  ["npc_jhpcs","smile","JHPCS","且该植物生命值越高，则眩晕时间越长。",0,false,false],
+  ["npc_jhpcs","wink","JHPCS","这样看来，把它与刚获得的坚果配合，应该挺不错的~",0,false,false]
+]

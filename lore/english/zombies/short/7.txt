@@ -1,0 +1,5 @@
+Screendoor Zombie
+
+Holds a screendoor that can block straight attacks.
+Trying using piercing or homing plants to
+attack its body directly.

@@ -1,0 +1,6 @@
+Lil' sprout
+
+After a period of time, grows into a random plant.
+Plant revolution: grows immediately; gains +1000 HP
+Grafting gift: the grafted plant grows immediately and gain +500HP
+Is ignored by most zombies

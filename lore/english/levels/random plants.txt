@@ -1,0 +1,4 @@
+0-5： Random Plants!
+
+Sprouts take some time to grow - and then turns into a random plant!
+Graft them on themselves to make them grow instantly!

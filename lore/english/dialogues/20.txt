@@ -1,0 +1,10 @@
+[
+  ["npc_jhpcs", "smile", "JHPCS", "New faces.", 0, true, false],
+  ["npc_jhpcs", "smile", "JHPCS", "That zombie with the white cone hat should be able to attack plants from a certain distance.", 0, false, false],
+  ["npc_jhpcs", "smile", "JHPCS", "Better plant a few more Sunflowers at the front to provide cover for the plants behind.", 0, false, false],
+  ["npc_jhpcs", "smile", "JHPCS", "By the way, just mentioning, I've detected that zombies in this world have armor with certain 'Elemental Resistance' attributes. The higher the 'Elemental Resistance', the more damage is reduced when taking corresponding types of damage.", 0, false, false],
+  ["npc_jhpcs", "smile", "JHPCS", "For example, most armor has some degree of Physical Resistance, so plants like Peashooters will deal reduced damage to them.", 0, false, false],
+  ["npc_jhpcs", "smile", "JHPCS", "However, toxic plants like the Puff-shroom aren't affected by Physical Resistance~", 0, false, false],
+  ["npc_jhpcs", "smile", "JHPCS", "Of course, there's also the opposite, 'Elemental Weakness'. For example, the paper cone hat zombie's hat has a Fire Element weakness.", 0, false, false],
+  ["npc_jhpcs", "wink", "JHPCS", "Reasonably arranging your plant attributes based on the zombie lineup will let you defeat zombies faster!", 0, false, false]
+]

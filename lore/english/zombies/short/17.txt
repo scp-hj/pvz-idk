@@ -1,0 +1,3 @@
+Ranger Zombie
+
+Shoots arrows that deals damage to plants.

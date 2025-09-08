@@ -1,0 +1,11 @@
+[
+  ["npc_jhpcs","think","JHPCS","嗯……这个嘛，不好说。",0,true,false],
+  ["npc_jhpcs","smile","JHPCS","对于这种浮岛类型的世界，在不同区域间穿行，得用到太阳能空间跳跃器。",0,false,false],
+  ["npc_jhpcs","think","JHPCS","这个我倒是有。不过，它的电量已经在我到达这个世界的时候耗尽了。",0,false,false],
+  ["npc_jhpcs","smile","JHPCS","这个世界也没什么电源啥的，所以唯一的选择就是依赖这里的自然日光给太阳能电池充电。",0,false,false],
+  ["npc_jhpcs","think","JHPCS","而且，这个世界的光子能量似乎及其不稳定，似乎完全随机地在极高及极低的阈值间跳跃。",0,false,false],
+  ["npc_jhpcs","think","JHPCS","所以，充好电所需的时间，也是难以预测的……最差的情况下，我们可能得在这滞留个几年，才能继续前进……",0,false,false],
+  ["npc_jhpcs","wink","JHPCS","不过不用担心啦，有我在，你应该也不会太寂寞的。",0,false,false],
+  ["npc_jhpcs","wink","JHPCS","况且，不还是有那个‘小白马’每天’给你提供挑战关卡嘛。好好用这段时间把目前所有植物都攒齐，也不错啊。",0,false,false],
+  ["npc_jhpcs","smile","JHPCS","要是还有啥想问的，就直接说出来吧。",0,false,false,["下一站",42],["旅程",43],["虚空裂痕",44],["小芽",45],["没事",46]]
+]

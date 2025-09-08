@@ -1,0 +1,4 @@
+Fire Ranger
+
+Shoots arrows that burn plants.
+(Burnt plants take high fire damage over time but has increased atk speed)

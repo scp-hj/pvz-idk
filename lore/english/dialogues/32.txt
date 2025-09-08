@@ -1,0 +1,7 @@
+[
+  ["npc_unicorn", "1", "Little White Horse", "You look quite impressive~ Would you like to try our Daily Challenge~?", 0, true, "npc_jhpcs_surprise.png"],
+  ["npc_unicorn", "1", "Little White Horse", "You can get super~flashy~ Chromatic Plants~", 0, false, "npc_jhpcs_surprise.png"],
+  ["npc_unicorn", "1", "Little White Horse", "Well, that's all for now~ Farewell~", 0, false, "npc_jhpcs_surprise.png"],
+  ["npc_jhpcs", "think", "JHPCS", "Gone...", 0, true, false],
+  ["npc_jhpcs", "smile", "JHPCS", "Doesn't seem hostile... Let's go check out this 'Daily Challenge' it mentioned.", 0, false, false, ["Okay", 0]]
+]

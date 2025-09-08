@@ -1,0 +1,2 @@
+Zombies deal 9999999999  dmg when eating plants.
+Caused by 'deadly' flag zombie

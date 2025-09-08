@@ -1,0 +1,13 @@
+[
+  ["npc_jhpcs","think","JHPCS","‘为什么要踏上旅程’……",0,true,false],
+  ["npc_jhpcs","think","JHPCS","不是我信不过你，但是……",0,false,false],
+  ["npc_jhpcs","think","JHPCS","这个问题……我不能答你。",0,false,false],
+  ["npc_jhpcs","smile","JHPCS","嗯，很抱歉，因为这确实是一个很好的问题。",0,false,false],
+  ["npc_jhpcs","wink","JHPCS","作为补偿，我就给你讲一下我的旅程是怎么样的吧~",0,false,false],
+  ["npc_jhpcs","think","JHPCS","嗯，简单来说，就是到了一个世界，过完那个世界里的所有内容，直至到达世界尽头，再开启传送门，跳跃至下一个世界。",0,false,false],
+  ["npc_jhpcs","smile","JHPCS","哦，你可能还不知道吧，一个个世界被散落在黑暗的虚空中漂浮，如同水中的浮萍。",0,false,false],
+  ["npc_jhpcs","think","JHPCS","‘这下世界为何而被散落’……",0,false,false],
+  ["npc_jhpcs","smile","JHPCS","嗯，真是抱歉，恐怕这个问题我也……不能答呢。",0,false,false],
+  ["npc_jhpcs","wink","JHPCS","毕竟……它的答案……和你问的第一条问题一样哦~",0,false,false],
+  ["npc_jhpcs","smile","JHPCS","要是还有啥想问的，就直接说出来吧。",0,false,false,["下一站",42],["旅程",43],["虚空裂痕",44],["小芽",45],["没事",46]]
+]

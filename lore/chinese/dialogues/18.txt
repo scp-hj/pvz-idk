@@ -1,0 +1,7 @@
+[
+  ["npc_jhpcs","think","JHPCS","布阵关卡啊……",0,true,false],
+  ["npc_jhpcs","think","JHPCS","在僵尸攻击开始前，就预先布置植物防线……",0,false,false],
+  ["npc_jhpcs","smile","JHPCS","作为前期关卡的话，难度应该不高的，随便摆几排火焰豌豆或者豌豆射手就行了。",0,false,false],
+  ["npc_jhpcs","smile","JHPCS","不过我似乎没有在这把铲子上察觉到返还阳光的能力，所以也要小心一点，不要摆错了~",0,false,false],
+  ["npc_jhpcs","wink","JHPCS","摆好植物之后，就点击右上蓝色按钮开始吧！",0,false,false]
+]

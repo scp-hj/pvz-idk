@@ -1,0 +1,10 @@
+[
+  ["npc_jhpcs", "surprise", "JHPCS", "啊-", 0, true,false],
+  ["npc_jhpcs", "surprise", "JHPCS", "啊？？？", 0, false,false],
+  ["npc_jhpcs", "blush", "JHPCS", "……", 0, false,false],
+  ["npc_jhpcs", "think", "JHPCS", "……", 0, false,false],
+  ["npc_jhpcs", "blush", "JHPCS", "依-依旧没有改变我对这个场景的看法，好吧！", 0, false, false],
+  ["npc_jhpcs", "smile", "JHPCS", "嗯，没错，这店也就这样了。对了，不妨把手挪到商品图片上，这样就能看到商品的描述了。", 0, false, false],
+  ["npc_jhpcs", "wink", "JHPCS", "扩充下卡槽，买几颗超模的植物，应该会对我们推关有所帮助的~", 0, false, false],
+  ["npc_jhpcs", "blush", "JHPCS", "……", 0, false,false]
+]

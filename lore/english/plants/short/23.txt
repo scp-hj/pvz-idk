@@ -1,0 +1,5 @@
+Torchwood
+
+Buff projectiles that passes through it.
+Cool down after buffing icy or watery projectiles.
+Heat down after buffing fiery projectiles.

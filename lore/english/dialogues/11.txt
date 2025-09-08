@@ -1,0 +1,6 @@
+[
+  ["npc_unicorn", "1", "Little White Horse", "We are dedicated to cleansing the void rifts affecting various worlds~", 0, true, false],
+  ["npc_unicorn", "1", "Little White Horse", "After sensing the anomaly here, a wisp of holy light descended from the sky~", 0, false, false],
+  ["npc_unicorn", "1", "Little White Horse", "And here I am~", 0, false, false],
+  ["npc_unicorn", "1", "Little White Horse", "Anything else you'd like to ask?~", 0, true, false, ["Chroma Credits", 8], ["Holy Light", 9], ["Daily Challenge", 10], ["How did you get here?", 11], ["Nothing", 12]]
+]

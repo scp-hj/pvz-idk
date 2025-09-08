@@ -1,0 +1,5 @@
+QYWWM
+
+Shoots peas to attack zombies.
+Periodically apply a permanent debuff to a random
+untargeted zombie.

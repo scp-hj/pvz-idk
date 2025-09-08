@@ -1,0 +1,9 @@
+[
+  ["npc_sprout", "smile", "Sprout", "I was watching through the rift as you two fought your way through thorns and thistles. Didn't expect you to break in so quickly and sweep away all those evil things nearby. Really impressive skills.", 0, false, "npc_jhpcs_upset.png"],
+  ["npc_sprout", "smile", "Sprout", "Ah, time's almost up. If I stay too long at the boundary between substance and void, I might disappear, you know...", 0, false, "npc_jhpcs_upset.png"],
+  ["npc_sprout", "wink", "Sprout", "Feel free to visit my space sometime. Occasionally, I might also pop over to your space for a visit~", 0, false, "npc_jhpcs_upset.png"],
+  ["npc_sprout", "smile", "Sprout", "Well, as a meeting gift, I'll give you this Plantern seed.", 0, false, "npc_jhpcs_upset.png"],
+  ["npc_sprout", "smile", "Sprout", "Many places here are pitch black like this~ To get around unimpeded, lighting the way is very important~", 0, false, "npc_jhpcs_upset.png"],
+  ["npc_jhpcs", "upset", "JHPCS", "...", 1, true, false],
+  ["npc_jhpcs", "upset", "JHPCS", "She vanished just like that...", 1, true, false]
+]

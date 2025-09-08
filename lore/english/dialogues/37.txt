@@ -1,0 +1,7 @@
+[
+  ["npc_jhpcs", "smile", "JHPCS", "Well, this is the place...", 0, true, false],
+  ["npc_jhpcs", "think", "JHPCS", "...Looks pretty shoddy. The items are just randomly arranged on an almost plain, detail-less background. One has to worry about the aesthetic sense of whoever created this~", 0, false, false],
+  ["npc_jhpcs", "smile", "JHPCS", "But a completely unattended store like this is truly strange... How does pressing a button automatically deduct our money and put the items directly into our pockets?", 0, false, false],
+  ["npc_jhpcs", "think", "JHPCS", "Could it be that they're pushing digital payments here too...?", 0, false, false],
+  ["npc_jhpcs", "wink", "JHPCS", "Just kidding~ An abnormal shop setup like this is nothing new to an experienced void traveler like me~", 0, false, false, ["The notice in the bottom left", 38], ["The background pattern", 39]]
+]

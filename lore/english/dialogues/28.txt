@@ -1,0 +1,6 @@
+[
+  ["npc_jhpcs", "surprise", "JHPCS", "So... so dark...", 0, true, false],
+  ["npc_jhpcs", "smile", "JHPCS", "Almost suffocated by the darkness... Luckily these Planterns light up this part of the area for us.", 0, false, false],
+  ["npc_jhpcs", "think", "JHPCS", "It was so dark earlier, I couldn't see what zombies this level has...", 0, false, false],
+  ["npc_jhpcs", "smile", "JHPCS", "...Could some random op monsters suddenly appear...and kill us?", 0, false, false, ["Then why are you smiling...", 0]]
+]

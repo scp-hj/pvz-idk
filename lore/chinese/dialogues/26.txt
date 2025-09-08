@@ -1,0 +1,4 @@
+[
+  ["npc_jhpcs","smile","JHPCS","进展挺快嘛！这条路很快就到头了。",0,true,false],
+  ["npc_jhpcs","wink","JHPCS","再接再厉！",0,false,false]
+]

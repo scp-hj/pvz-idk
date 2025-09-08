@@ -1,0 +1,10 @@
+[
+  ["npc_jhpcs", "smile", "JHPCS", "These are unnaturally occurring spacetime dislocations, manifestations of the void's power eroding the world.", 0, true, false],
+  ["npc_jhpcs", "smile", "JHPCS", "Oh, you might be a bit confused. *This* void is not *that* void.", 0, false, false],
+  ["npc_jhpcs", "smile", "JHPCS", "The void outside the worlds... is absolutely not empty, nor is it some terrifying existence...", 0, false, false],
+  ["npc_jhpcs", "smile", "JHPCS", "Quite the opposite, the void outside... is filled with worlds like these. And other substances, all mixed together, shimmering with seven-colored structural colors in background light of unknown origin.", 0, false, false],
+  ["npc_jhpcs", "smile", "JHPCS", "Whereas the void related to the void rifts comes from within the worlds, it is absolute emptiness, nothingness. So I might prefer the name 'Absolute Vacuum'.", 0, false, false],
+  ["npc_jhpcs", "think", "JHPCS", "And as for why the two share the same name...", 0, false, false],
+  ["npc_jhpcs", "upset", "JHPCS", "Honestly, I don't know.", 0, false, false],
+  ["npc_jhpcs", "smile", "JHPCS", "If there's anything else you want to ask, just say it.", 0, false, false, ["Next Stop", 42], ["The Journey", 43], ["Void Rifts", 44], ["Sprout", 45], ["Nothing", 46]]
+]

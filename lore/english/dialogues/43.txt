@@ -1,0 +1,13 @@
+[
+  ["npc_jhpcs", "think", "JHPCS", "'Why embark on the journey'...", 0, true, false],
+  ["npc_jhpcs", "think", "JHPCS", "It's not that I don't trust you, but...", 0, false, false],
+  ["npc_jhpcs", "think", "JHPCS", "This question... I can't answer you.", 0, false, false],
+  ["npc_jhpcs", "smile", "JHPCS", "Well, I'm sorry, because it really is a good question.", 0, false, false],
+  ["npc_jhpcs", "wink", "JHPCS", "As compensation, let me tell you what my journey is like~", 0, false, false],
+  ["npc_jhpcs", "think", "JHPCS", "Well, simply put, I arrive at a world, complete all its content until I reach the world's end, then open a portal and jump to the next world.", 0, false, false],
+  ["npc_jhpcs", "smile", "JHPCS", "Oh, you might not know yet, but individual worlds are scattered and float in the dark void, like duckweed on water.", 0, false, false],
+  ["npc_jhpcs", "think", "JHPCS", "'Why are these worlds scattered'...", 0, false, false],
+  ["npc_jhpcs", "smile", "JHPCS", "Hmm, truly sorry, I'm afraid I... can't answer that one either.", 0, false, false],
+  ["npc_jhpcs", "wink", "JHPCS", "After all... its answer... is the same as the first question you asked~", 0, false, false],
+  ["npc_jhpcs", "smile", "JHPCS", "If there's anything else you want to ask, just say it.", 0, false, false, ["Next Stop", 42], ["The Journey", 43], ["Void Rifts", 44], ["Sprout", 45], ["Nothing", 46]]
+]

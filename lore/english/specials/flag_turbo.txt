@@ -1,0 +1,4 @@
+Speed of zombies +(30*difficulty)%
+Caused by 'turbo' flag zombie.
+Difficulty starts at 1 and increases by 1 for every
+10 small waves of zombies spawned. Caps at 5.

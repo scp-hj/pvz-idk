@@ -1,0 +1,4 @@
+[
+  ["npc_jhpcs","surprise","JHPCS","...?",0,true,false],
+  ["npc_jhpcs","surprise","JHPCS","那你还记得自己为何会在这里吗……",0,false,false,["（努力地回想...）",3],["（但脑海仍一片空白）",3]]
+]

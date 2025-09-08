@@ -1,0 +1,7 @@
+[
+  ["npc_jhpcs", "think", "JHPCS", "A Last Stand level...", 0, true, false],
+  ["npc_jhpcs", "think", "JHPCS", "Pre-arranging plant defenses before the zombie attack begins...", 0, false, false],
+  ["npc_jhpcs", "smile", "JHPCS", "Shouldn't be too difficult for an early level. Just place a few rows of Fire Peashooters or Peashooters randomly.", 0, false, false],
+  ["npc_jhpcs", "smile", "JHPCS", "But I don't seem to detect any sun-refunding ability on this shovel, so be careful not to misplace them~", 0, false, false],
+  ["npc_jhpcs", "wink", "JHPCS", "After placing your plants, click the blue button on the top right to start!", 0, false, false]
+]

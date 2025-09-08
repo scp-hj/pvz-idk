@@ -1,0 +1,5 @@
+Powerups
+
+Abilities that can be activated during a level.
+They have CD and can only be used for a certain amount of times in the same level.
+Yeah it's basically how gadgets in Brawl Stars worked before the rework lol.

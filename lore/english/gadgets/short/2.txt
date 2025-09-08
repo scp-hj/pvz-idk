@@ -1,0 +1,4 @@
+Plant Food
+
+Select a plant on lawn.
+Immediately finish its seed packet's recharge.

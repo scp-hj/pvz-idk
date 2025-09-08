@@ -1,0 +1,10 @@
+[
+  ["npc_jhpcs","smile","JHPCS","有新面孔呢。",0,true,false],
+  ["npc_jhpcs","smile","JHPCS","那个带白色帽子的僵尸，应该可以在一定距离外远程攻击植物。",0,false,false],
+  ["npc_jhpcs","smile","JHPCS","最好在前排多种几个向日葵为后方植物打掩护。",0,false,false],
+  ["npc_jhpcs","smile","JHPCS","对了，顺带一提，我察觉到这个世界的僵尸防具拥有一定的‘元素抗性’设定。‘元素抗性’越高，则受到对应种类的伤害时该伤害就会减免。",0,false,false],
+  ["npc_jhpcs","smile","JHPCS","例如大部分防具都会或多或少地带有一定物理抗性，这样豌豆射手之类的植物对它们造成的伤害就会减少。",0,false,false],
+  ["npc_jhpcs","smile","JHPCS","不过像小喷菇这样的毒系植物，就不会受物理抗性影响~",0,false,false],
+  ["npc_jhpcs","smile","JHPCS","当然，也会有与其相反的‘元素弱点’，例如白色帽子僵尸的纸帽，就拥有火元素弱点。",0,false,false],
+  ["npc_jhpcs","wink","JHPCS","合理根据僵尸阵容安排自身植物属性，打僵尸就能打得更快了！",0,false,false]
+]

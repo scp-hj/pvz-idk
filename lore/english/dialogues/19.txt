@@ -1,0 +1,7 @@
+[
+  ["npc_jhpcs", "think", "JHPCS", "'Gadgets'? This kind of ability, I haven't seen in Plants vs. Zombies...", 0, true, false],
+  ["npc_jhpcs", "think", "JHPCS", "Though a character's skill in another game has a similar concept... I can't remember the name clearly, seems like it starts with 'Brawl' or something.", 0, false, false],
+  ["npc_jhpcs", "smile", "JHPCS", "Judging by this gadget's description, using it will stun all zombies on the field at the cost of destroying one plant.", 0, false, false],
+  ["npc_jhpcs", "smile", "JHPCS", "And the higher the health of that plant, the longer the stun duration.", 0, false, false],
+  ["npc_jhpcs", "wink", "JHPCS", "Looking at it this way, combining it with the newly acquired Wall-nut should work pretty well~", 0, false, false]
+]

@@ -1,0 +1,4 @@
+Cherry Bomb
+
+Explodes after a short delay, dealing tremendous dmg in 3x3.
+Plant it onto another fruit to activate the plant revolution effect!

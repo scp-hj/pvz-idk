@@ -1,0 +1,6 @@
+[
+  ["npc_jhpcs", "think", "JHPCS", "Imps...", 0, true, false],
+  ["npc_jhpcs", "smile", "JHPCS", "It seems because they are short, plants like Peashooters can't hit them.", 0, false, false],
+  ["npc_jhpcs", "smile", "JHPCS", "No problem for the newly acquired Mini Pear though.", 0, false, false],
+  ["npc_jhpcs", "wink", "JHPCS", "So no need to feel inferior~ Being short has its advantages too~", 0, false, false, ["You're not much taller yourself", 24], ["What nonsense are you talking?", 25]]
+]

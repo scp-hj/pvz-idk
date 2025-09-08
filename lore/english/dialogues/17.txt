@@ -1,0 +1,9 @@
+[
+  ["npc_jhpcs", "wink", "JHPCS", "Well done, partner!", 0, true, false],
+  ["npc_jhpcs", "think", "JHPCS", "According to my research, this mechanism is called 'Grafting'.", 0, false, false],
+  ["npc_jhpcs", "smile", "JHPCS", "When planting a plant, you can stack it onto an existing plant of the same race, replacing it after a brief animation.", 0, false, false],
+  ["npc_jhpcs", "think", "JHPCS", "Race... that's the type of plant, like Pea, Flower, Mushroom. These are races.", 0, false, false],
+  ["npc_jhpcs", "wink", "JHPCS", "Doing this not only lets you replace frontline plants risk-free but also reduces the cooldown for that plant and refunds part of the original plant's sun cost. Quite economical.", 0, false, false],
+  ["npc_jhpcs", "wink", "JHPCS", "Moreover, for certain plants, like the Sun-shroom just now, grafting can trigger its 'Plant Evolution' effect!", 0, false, false],
+  ["npc_jhpcs", "wink", "JHPCS", "Use the Grafting and Plant Evolution mechanisms well, and battles might become twice as effective with half the effort~", 0, false, false]
+]

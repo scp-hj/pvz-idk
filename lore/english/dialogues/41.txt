@@ -1,0 +1,4 @@
+[
+  ["npc_jhpcs", "wink", "JHPCS", "Yo-ho~ Hello there, partner~", 0, true, false],
+  ["npc_jhpcs", "smile", "JHPCS", "If there's anything you want to ask, just say it.", 0, false, false, ["Next Stop", 42], ["The Journey", 43], ["Void Rifts", 44], ["Sprout", 45], ["Nothing", 46]]
+]

@@ -1,0 +1,6 @@
+[
+  ["npc_jhpcs","smile","JHPCS","这个土豆地雷出土后被触发的爆炸伤害似乎挺高的",0,true,false],
+  ["npc_jhpcs","smile","JHPCS","这关的话，应该用坚果和冰冻生菜尽量拖延僵尸，并将它们尽量聚起来。",0,false,false],
+  ["npc_jhpcs","wink","JHPCS","然后最后轰~~~的一声~",0,false,false],
+  ["npc_jhpcs","wink","JHPCS","直接解决~",0,false,false]
+]

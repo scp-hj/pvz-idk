@@ -1,0 +1,10 @@
+[
+  ["npc_jhpcs", "surprise", "JHPCS", "Ah-", 0, true, false],
+  ["npc_jhpcs", "surprise", "JHPCS", "Ah???", 0, false, false],
+  ["npc_jhpcs", "blush", "JHPCS", "...", 0, false, false],
+  ["npc_jhpcs", "think", "JHPCS", "...", 0, false, false],
+  ["npc_jhpcs", "blush", "JHPCS", "It-It still doesn't change my opinion of this scene, okay!", 0, false, false],
+  ["npc_jhpcs", "smile", "JHPCS", "Ahem, right, that's the shop for you. By the way, try moving your cursor over the item images to see their descriptions.", 0, false, false],
+  ["npc_jhpcs", "wink", "JHPCS", "Expanding the seed slots and buying a few overpowered plants should help us progress through the levels~", 0, false, false],
+  ["npc_jhpcs", "blush", "JHPCS", "...", 0, false, false]
+]

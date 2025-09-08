@@ -1,0 +1,7 @@
+The Reaper
+
+Messenger from the Sheoul.
+Ignores and phases through plants.
+While having a cloak, deals dmg to plants it touches.
+(The damage can be reflected by 'holy' plants)
+Unselectable and ignores lawnmowers when not under light.

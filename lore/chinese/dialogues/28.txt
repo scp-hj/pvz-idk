@@ -1,0 +1,6 @@
+[
+  ["npc_jhpcs","surprise","JHPCS","好……好黑……",0,true,false],
+  ["npc_jhpcs","smile","JHPCS","差点都被黑暗压得喘不过气了……好在有这些路灯花为我们照亮这一部分的场地。",0,false,false],
+  ["npc_jhpcs","think","JHPCS","刚才那么黑，都没看清这关的出怪……",0,false,false],
+  ["npc_jhpcs","smile","JHPCS","……该不会突然出来啥妖魔鬼怪吧……",0,false,false,["那你还笑着干嘛……",0]]
+]

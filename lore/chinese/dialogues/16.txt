@@ -1,0 +1,4 @@
+[
+  ["npc_jhpcs","think","JHPCS","这种局面……唯一能做的就是把新获得的能量花叠种在向日葵上了吧。",0,true,false],
+  ["npc_jhpcs","smile","JHPCS","拿起能量花，应该可以看到向日葵身上出现了铲子的图标，这应该就代表着可以叠种了。",0,false,false]
+]

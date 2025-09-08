@@ -1,0 +1,4 @@
+Buckethead Zombie
+
+Zombie with moderately high hp.
+Gives all zombies in 3x3 a bucket when dead.

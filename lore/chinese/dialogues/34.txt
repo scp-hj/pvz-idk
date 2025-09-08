@@ -1,0 +1,10 @@
+[
+  ["npc_sprout", "smile", "小芽", "‘实’与‘虚’相反，‘满’与‘空’相反，挺简单明了的吧~", 0, true, "npc_jhpcs_upset.png"],
+  ["npc_sprout", "smile", "小芽", "人家透着裂痕，看着你们两个一路披荆斩棘，没想到那么快就打了进来，还把这附近的这些邪孽之物一并扫除，真是身手了得呢。", 0, false, "npc_jhpcs_upset.png"],
+  ["npc_sprout", "smile", "小芽", "啊，时间差不多了，要是在虚实的边界待上太久，人家可是会消失的哦……", 0, false, "npc_jhpcs_upset.png"],
+  ["npc_sprout", "wink", "小芽", "欢迎你们来我这个空间逛逛。偶尔，人家也会来你们的空间串串们的~", 0, false, "npc_jhpcs_upset.png"],
+  ["npc_sprout", "smile", "小芽", "嗯，作为见面礼，就把这个路灯花的种子送给你们吧。", 0, false, "npc_jhpcs_upset.png"],
+  ["npc_sprout", "smile", "小芽", "人家这里很多地方都可是像这样漆黑一片的~要在这里畅通无阻，照亮前路可是十分重要的呢~", 0, false, "npc_jhpcs_upset.png"],
+  ["npc_jhpcs", "upset", "JHPCS", "……", 1, true, false],
+  ["npc_jhpcs", "upset", "JHPCS", "消失了……", 1, true, false]
+]

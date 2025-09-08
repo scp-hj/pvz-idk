@@ -1,0 +1,10 @@
+[
+  ["npc_sprout", "smile", "???", "?", 0, true, "npc_jhpcs_surprise.png"],
+  ["npc_sprout", "smile", "???", "I haven't met either of you before.", 0, false, "npc_jhpcs_surprise.png"],
+  ["npc_jhpcs", "upset", "JHPCS", "...", 1, true, "npc_sprout_smile.png"],
+  ["npc_jhpcs", "upset", "JHPCS", "...", 1, false, "npc_sprout_smile.png"],
+  ["npc_sprout", "smile", "???", "...I'm Lil' Sprout. You must be mistaken; after all, there are many beings in this world that look similar to me~", 0, true, "npc_jhpcs_upset.png"],
+  ["npc_jhpcs", "upset", "JHPCS", "...", 1, true, "npc_sprout_smile.png"],
+  ["npc_jhpcs", "upset", "JHPCS", "S-Sprout, then what's the deal with suddenly appearing here? This void rift... are you behind it?", 1, true, "npc_sprout_smile.png"],
+  ["npc_sprout", "smile", "Sprout", "Oh my, I don't have that kind of ability. I was just casually strolling through this space when this 'Plentiful' rift just popped right in my face.", 0, true, "npc_jhpcs_upset.png", ["Plentiful rift?", 34], ["Quite a distinctive name.", 35]]
+]

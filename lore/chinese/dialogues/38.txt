@@ -1,0 +1,11 @@
+[
+  ["npc_jhpcs", "surprise", "JHPCS", "对哦，应该是这个店的店长留下的。", 0, true,false],
+  ["npc_jhpcs", "think", "JHPCS", "说什么正在扩展业务，敬请期待啥的……", 0, false,false],
+  ["npc_jhpcs", "smile", "JHPCS", "也不知得期待到啥时候呢。", 0, false,false],
+  ["npc_jhpcs", "think", "JHPCS", "不过这张脸……倒是有几分熟悉……", 0, false,false],
+  ["npc_jhpcs", "think", "JHPCS", "……", 0, false,false],
+  ["npc_jhpcs", "upset", "JHPCS", "想不起来……", 0, false,false],
+  ["npc_jhpcs", "smile", "JHPCS", "哎呀，平时我记性也算不错的，谁曾想这画的实在有些……抽象了。", 0, false, false],
+  ["npc_jhpcs", "smile", "JHPCS", "嗯，这店也就这样了。不妨把手挪到商品图片上，这样就能看到商品的描述了。", 0, false, false],
+  ["npc_jhpcs", "wink", "JHPCS", "扩充下卡槽，买几颗超模的植物，应该会对我们推关有所帮助的~", 0, false, false]
+]

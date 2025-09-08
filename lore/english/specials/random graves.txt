@@ -1,0 +1,2 @@
+'Random' graves would spawn with time!
+After they are destroyed, a random 'special' zombie will be spawned.

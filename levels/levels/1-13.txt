@@ -1,0 +1,31 @@
+{
+    "start_sun": 50,
+    "lanes": [1,2,3,4,5],
+    "scene": "lawn_day",
+    "sun_fall": 1,
+    "shroom_sleep": 1,
+    "opening_grave": 0,
+    "grave_danger": 0,
+    "max_grave": 0,
+    "wave_duration": [1200, 550, 300],
+    "level": ["1-13","1-13"],
+    "gimicks": [],
+    "grave_area": [5,10],
+    "sun_fall_duration": [300,600],
+"zombie_spawn": [
+    [8],        
+    [8],        
+    [8],      
+    [12],      
+    [12,8],     
+    [8,8,8],     
+    [12,8,12],   
+    [8,8,8,8],  
+    [12,12,8,8],
+    [12,12,12,8,8,8,8,8]
+],
+    "big_wave": 10,
+    "unlocks": ["1-14",6,"False"],
+"start_dialogue":"23",
+"end_dialogue":"26"
+}

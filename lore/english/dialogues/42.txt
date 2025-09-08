@@ -1,0 +1,11 @@
+[
+  ["npc_jhpcs", "think", "JHPCS", "Hmm... that's hard to say.", 0, true, false],
+  ["npc_jhpcs", "smile", "JHPCS", "For floating island type worlds like this, traveling between different areas requires a solar space jumper.", 0, false, false],
+  ["npc_jhpcs", "think", "JHPCS", "I do have one. However, its battery drained right when I arrived in this world.", 0, false, false],
+  ["npc_jhpcs", "smile", "JHPCS", "This world doesn't have power sources or anything, so the only option is to rely on the natural sunlight here to charge the solar battery.", 0, false, false],
+  ["npc_jhpcs", "think", "JHPCS", "Moreover, the photon energy in this world seems extremely unstable, seemingly jumping completely randomly between very high and very low thresholds.", 0, false, false],
+  ["npc_jhpcs", "think", "JHPCS", "So, the time required to fully charge it is also unpredictable... In the worst case, we might be stuck here for a few years before we can move on...", 0, false, false],
+  ["npc_jhpcs", "wink", "JHPCS", "But don't worry, with me here, you probably won't be too lonely.", 0, false, false],
+  ["npc_jhpcs", "wink", "JHPCS", "Besides, there's still that 'Little White Horse' providing you with challenge levels every day. It's not bad to use this time to collect all the available plants.", 0, false, false],
+  ["npc_jhpcs", "smile", "JHPCS", "If there's anything else you want to ask, just say it.", 0, false, false, ["Next Stop", 42], ["The Journey", 43], ["Void Rifts", 44], ["Sprout", 45], ["Nothing", 46]]
+]

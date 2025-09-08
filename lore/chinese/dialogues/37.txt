@@ -1,0 +1,7 @@
+[
+  ["npc_jhpcs", "smile", "JHPCS", "嗯，就是这里……", 0, true,false],
+  ["npc_jhpcs", "think", "JHPCS", "……看上去挺简陋的。商品都被随意地排列在几乎纯色、没有细节的背景上，创建这里的人审美水平担忧啊~", 0, false, false],
+  ["npc_jhpcs", "smile", "JHPCS", "不过像这种无人经营的商店，是真的奇怪……凭什么我们按个按钮，金钱会就自动地减少，而商品就直接被我们置入囊中了？", 0, false, false],
+  ["npc_jhpcs", "think", "JHPCS", "难不成这里也在推动电子支付么……", 0, false, false],
+  ["npc_jhpcs", "wink", "JHPCS", "开玩笑的啦~这种异常的商店设置在我这个经验丰富的虚空旅者面前，还不是司空见惯~", 0, false, false,["左下角的告示",38],["背景的图案",39]]
+]

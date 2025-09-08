@@ -1,0 +1,5 @@
+Blizzard
+
+All plants' next attack is replaced by shooting a
+piercing and freezing snowball.
+They are chilled before that.

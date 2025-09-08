@@ -1,0 +1,6 @@
+The Lost
+
+Lost souls.
+Ignores and phases through plants.
+Unselectable and ignores lawnmowers when not under light.
+Fortunately has not unlocked the holy mantle.

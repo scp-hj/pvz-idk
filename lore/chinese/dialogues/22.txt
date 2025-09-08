@@ -1,0 +1,8 @@
+[
+  ["npc_jhpcs","think","JHPCS","新妙具‘暴风雪’……",0,true,false],
+  ["npc_jhpcs","smile","JHPCS","效果是将场上所有植物下一次攻击替换为可穿透僵尸并冰冻僵尸的雪球，在那之前植物会被缓速。",0,false,false],
+  ["npc_jhpcs","smile","JHPCS","有足够植物基础的话，应该是很强的控场呢。",0,false,false],
+  ["npc_jhpcs","smile","JHPCS","不过要注意的是阳光生产植物也会受到影响。",0,false,false],
+  ["npc_jhpcs","smile","JHPCS","所以在使用前，最好估量下自己目前的阳光状况。",0,false,false],
+  ["npc_jhpcs","wink","JHPCS","要不然躲得过初一，躲不过十五啊~",0,false,false]
+]

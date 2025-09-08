@@ -1,0 +1,1 @@
+[[[452,168],"day level"],[[685,429],"night level"],[[1072,222],"drifting lawn"],[[1506,329],"last stand"],[[900,400],"random plants"],[[1200,100],"ghost level"],[[1200,400],"bullet level"]]

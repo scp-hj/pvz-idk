@@ -1,0 +1,5 @@
+Blue Football Zombie
+
+Runs insanely fast at first,
+destroys the first plant it connects to,
+then becomes slow.

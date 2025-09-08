@@ -1,0 +1,10 @@
+[
+  ["npc_sprout","smile","???","？",0,true,"npc_jhpcs_surprise.png"],
+  ["npc_sprout","smile","???","人家可没见过你们二位哦。",0,false,"npc_jhpcs_surprise.png"],
+  ["npc_jhpcs","upset","JHPCS","……",1,true,"npc_sprout_smile.png"],
+  ["npc_jhpcs","upset","JHPCS","……",1,false,"npc_sprout_smile.png"],
+  ["npc_sprout","smile","???","……我是小芽，这位大概是记错了吧，毕竟这个世界跟我长得形似的生灵挺多的~",0,true,"npc_jhpcs_upset.png"],
+  ["npc_jhpcs","upset","JHPCS","……",1,true,"npc_sprout_smile.png"],
+  ["npc_jhpcs","upset","JHPCS","小-小芽，那突然出现在这里是什么回事。这个虚空裂缝……怕不是你搞的吧？",1,true,"npc_sprout_smile.png"],
+  ["npc_sprout","smile","小芽","哎呀，人家哪有这等本事。本来只是在很平常地在这片空间闲逛而已，谁料想这个‘实满’裂缝就这么怼我脸上了。",0,true,"npc_jhpcs_upset.png",["实满？",34],["好别致的名字。",35]]
+]

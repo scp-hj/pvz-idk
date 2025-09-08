@@ -1,0 +1,7 @@
+[
+  ["npc_unicorn","1","小白马","看你相貌堂堂的样子~要不要来试试我们的每日挑战~",0,true,"npc_jhpcs_surprise.png"],
+  ["npc_unicorn","1","小白马","可以获得超~炫~的星虹植物哦~",0,false,"npc_jhpcs_surprise.png"],
+  ["npc_unicorn","1","小白马","嗯，就先这样了~再会了~",0,false,"npc_jhpcs_surprise.png"],
+  ["npc_jhpcs","think","JHPCS","走了……",0,true,false],
+  ["npc_jhpcs","smile","JHPCS","看它应该没啥敌意的样子……那我们就去看看它所说的‘每日挑战’吧。",0,false,false,["好的",0]]
+]

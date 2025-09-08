@@ -1,0 +1,5 @@
+[
+  ["npc_jhpcs","smile","???","你好呀~",0,true,false],
+  ["npc_jhpcs","smile","???","我叫JHPCS。",0,false,false],
+  ["npc_jhpcs","smile","JHPCS","你也是在虚空中穿梭的旅者，对吧？",0,false,false,["虚空？",2],["旅者？",2]]
+]

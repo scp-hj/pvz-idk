@@ -1,0 +1,4 @@
+[
+  ["npc_jhpcs", "surprise", "JHPCS", "...?", 0, true, false],
+  ["npc_jhpcs", "surprise", "JHPCS", "Then, do you remember why you're here...?", 0, false, false, ["(Trying hard to remember...)", 3], ["(But my mind is still blank)", 3]]
+]

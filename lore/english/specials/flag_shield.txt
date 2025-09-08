@@ -1,0 +1,4 @@
+Zombies takes (3*current difficulty）less dmg
+Caused by 'shield' flag zombie.
+Difficulty starts at 1 and increases by 1 for every
+10 small waves of zombies spawned. Caps at 5.

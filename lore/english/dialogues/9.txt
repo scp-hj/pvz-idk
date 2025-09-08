@@ -1,0 +1,5 @@
+[
+  ["npc_unicorn", "1", "Little White Horse", "The hope of this universe!!!", 0, true, false],
+  ["npc_unicorn", "1", "Little White Horse", "Only He can illuminate the boundless dark forest!", 0, false, false],
+  ["npc_unicorn", "1", "Little White Horse", "Anything else you'd like to ask?~", 0, true, false, ["Chroma Credits", 8], ["Holy Light", 9], ["Daily Challenge", 10], ["How did you get here?", 11], ["Nothing", 12]]
+]

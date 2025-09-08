@@ -1,0 +1,10 @@
+[
+  ["npc_jhpcs","smile","JHPCS","这些是非自然地产生的时空错位，是虚空力量侵蚀世界的体现。",0,true,false],
+  ["npc_jhpcs","smile","JHPCS","哦，你可能有些困惑吧，此虚空非彼虚空。",0,false,false],
+  ["npc_jhpcs","smile","JHPCS","世界外面的虚空……绝非是空的，也不是什么骇人的存在……",0,false,false],
+  ["npc_jhpcs","smile","JHPCS","恰恰相反，外面的虚空……充斥着像这样的世界。还有些别的物质，被搅和在一起，在不明来源的背景光中泛出七色的结构色。",0,false,false],
+  ["npc_jhpcs","smile","JHPCS","而跟虚空裂痕相关的虚空，则来自于世界内部，是绝对的空、无。所以我可能更喜欢‘真空’这个名字。",0,false,false],
+  ["npc_jhpcs","think","JHPCS","而至于为何二者会有同样的名字……",0,false,false],
+  ["npc_jhpcs","upset","JHPCS","老实说，我不知道。",0,false,false],
+  ["npc_jhpcs","smile","JHPCS","要是还有啥想问的，就直接说出来吧。",0,false,false,["下一站",42],["旅程",43],["虚空裂痕",44],["小芽",45],["没事",46]]
+]

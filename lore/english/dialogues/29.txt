@@ -1,0 +1,5 @@
+[
+  ["npc_sprout", "smile", "???", "Hehe...", 0, true, false],
+  ["npc_sprout", "smile", "???", "As expected, it wasn't too hard for you.", 0, true, false],
+  ["npc_jhpcs", "surprise", "JHPCS", "Y-you... how...", 1, true, "npc_sprout_smile.png", ["You know each other?", 33]]
+]

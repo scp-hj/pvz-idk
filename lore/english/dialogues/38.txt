@@ -1,0 +1,11 @@
+[
+  ["npc_jhpcs", "surprise", "JHPCS", "Oh right, this was probably left by the shop's manager.", 0, true, false],
+  ["npc_jhpcs", "think", "JHPCS", "Says something about expanding their business, 'stay tuned' and all that...", 0, false, false],
+  ["npc_jhpcs", "smile", "JHPCS", "Who knows how long we'll have to 'stay tuned'.", 0, false, false],
+  ["npc_jhpcs", "think", "JHPCS", "But this face... seems somewhat familiar...", 0, false, false],
+  ["npc_jhpcs", "think", "JHPCS", "...", 0, false, false],
+  ["npc_jhpcs", "upset", "JHPCS", "Can't remember...", 0, false, false],
+  ["npc_jhpcs", "smile", "JHPCS", "Sigh, my memory is usually quite good, but who would have thought the drawing would be so... abstract.", 0, false, false],
+  ["npc_jhpcs", "smile", "JHPCS", "Well, that's the shop for you. Try moving your cursor over the item images to see their descriptions.", 0, false, false],
+  ["npc_jhpcs", "wink", "JHPCS", "Expanding the seed slots and buying a few overpowered plants should help us progress through the levels~", 0, false, false]
+]

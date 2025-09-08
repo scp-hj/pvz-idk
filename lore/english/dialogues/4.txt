@@ -1,0 +1,13 @@
+[
+  ["npc_jhpcs", "think", "JHPCS", "You might be wondering...", 0, true, false],
+  ["npc_jhpcs", "smile", "JHPCS", "Why are we planting plants to fight off zombies and stop them from eating 'brains'?", 0, false, false],
+  ["npc_jhpcs", "smile", "JHPCS", "After all, I don't have a brain,", 0, false, false],
+  ["npc_jhpcs", "think", "JHPCS", "And you…", 0, false, false],
+  ["npc_jhpcs", "smile", "JHPCS", "Judging by your appearance, you don't seem like a brained-creature either.", 0, false, false],
+  ["npc_jhpcs", "wink", "JHPCS", "(Hey, I'm not mocking you~)", 0, false, false],
+  ["npc_jhpcs", "smile", "JHPCS", "Worlds floating in the void often have various bizarre, even rule-breaking 'rules'.", 0, false, false],
+  ["npc_jhpcs", "smile", "JHPCS", "It's not just planting plants to fight zombies.", 0, false, false],
+  ["npc_jhpcs", "smile", "JHPCS", "In some worlds I've visited, the 'rules' dictate that people control a yellow creature, navigating an electronic maze to eat yellow pixels while avoiding four-colored ghosts;", 0, false, false],
+  ["npc_jhpcs", "think", "JHPCS", "Some say these strange 'rules' are randomly generated, but... I can feel that in certain aspects, the 'rules' seem to deliberately guide travelers like us, almost as if they bear the mark of intentional design.", 0, false, false],
+  ["npc_jhpcs", "think", "JHPCS", "Sorry... I seem to have rambled on by myself. Let's continue tackling levels.", 0, false, false, ["Alright", 5], ["So you haven't been here long either? How do you know the rules so well?", 6]]
+]

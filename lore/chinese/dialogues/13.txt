@@ -1,0 +1,5 @@
+[
+  ["npc_jhpcs","think","JHPCS","日夜关卡交替吗……",0,true,false],
+  ["npc_jhpcs","smile","JHPCS","挺少见的呢。",0,false,false],
+  ["npc_jhpcs","smile","JHPCS","好在这个版本的小喷菇够强，感觉黑夜关卡前期反倒比白天压力小些呢。",0,false,false]
+]

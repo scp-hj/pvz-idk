@@ -1,0 +1,18 @@
+{"start_sun": 1000, 
+"lane_num": 5, 
+"scene": "void", 
+"sun_fall": 1,
+"shroom_sleep":0,
+"opening_grave":8,
+"grave_danger":2,
+"max_grave":40, 
+"wave_duration":[1700,700,300],
+"gimicks":["locked and loaded","random graves"],
+"locked_plants":[[28,28,28,28,28,28,28,28,28,28],6],
+"level":["0-5: random plants","0-5：随机植物！"],
+"grave_area":[4,10],
+"sun_fall_duration":[25,150],
+"zombie_spawn":[[1],[1],[1],[1],[1],[1],[1],[1],[1],[1],[1],[1],[1],[1],[1],[1],[1],[1],[1],[1]],
+"big_wave":10,
+"unlocks":["ghost level",28,"False"]
+}

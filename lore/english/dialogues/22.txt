@@ -1,0 +1,8 @@
+[
+  ["npc_jhpcs", "think", "JHPCS", "New gadget 'Blizzard'...", 0, true, false],
+  ["npc_jhpcs", "smile", "JHPCS", "The effect replaces the next attack of all plants on the field with a snowball that can pierce and freeze zombies, but the plants will be slowed beforehand.", 0, false, false],
+  ["npc_jhpcs", "smile", "JHPCS", "With a sufficient plant foundation, it should be strong crowd control.", 0, false, false],
+  ["npc_jhpcs", "smile", "JHPCS", "But note that sun-producing plants will also be affected.", 0, false, false],
+  ["npc_jhpcs", "smile", "JHPCS", "So it's best to assess your current sun situation before using it.", 0, false, false],
+  ["npc_jhpcs", "wink", "JHPCS", "Otherwise, you might dodge the first wave, but not the fifteenth~", 0, false, false]
+]

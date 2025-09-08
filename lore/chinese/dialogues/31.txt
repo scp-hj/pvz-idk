@@ -1,0 +1,11 @@
+[
+  ["npc_unicorn","1","小白马","也行~名称只是浮表~内心才是关键~",0,true,"npc_jhpcs_surprise.png"],
+  ["npc_jhpcs","think","JHPCS","圣光？没听说过……",1,true,"npc_unicorn_1.png"],
+  ["npc_jhpcs","think","JHPCS","那你为何来到此处？这个虚空裂痕是你造成的吗？",1,false,"npc_unicorn_1.png"],
+  ["npc_unicorn","1","小白马","恰恰相反~我是来解决它们的~",0,true,"npc_jhpcs_think.png"],
+  ["npc_jhpcs","surprise","JHPCS","哦？",1,true,"npc_unicorn_1.png"],
+  ["npc_jhpcs","surprise","JHPCS","等等……‘它们’？",1,false,"npc_unicorn_1.png"],
+  ["npc_unicorn","1","小白马","嗯，你没听错~不只是这里，这个世界的许多角落都出现了类似这样的裂缝~",0,true,"npc_jhpcs_surprise.png"],
+  ["npc_unicorn","1","小白马","具体成因~我们也没搞清~",0,false,"npc_jhpcs_surprise.png"],
+  ["npc_unicorn","1","小白马","嘿，你！没错，就是你~",0,false,"npc_jhpcs_surprise.png",["我，我吗",32]]
+]

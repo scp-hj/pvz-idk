@@ -1,0 +1,7 @@
+Coffee Bean
+
+Can be planted on top of other plants.
+After a short delay, disappear and remove all effects from
+plants in the same tile.
+Wake them if they are shrooms.
+They also get a short atk speed buff.

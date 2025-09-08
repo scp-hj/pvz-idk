@@ -1,0 +1,5 @@
+[
+  ["npc_jhpcs", "smile", "JHPCS", "嗯，看来商店被解锁了呢。", 0, true,false],
+  ["npc_jhpcs", "smile", "JHPCS", "有时间的话，我们就去看看吧。", 0, false, false],
+  ["npc_jhpcs", "wink", "JHPCS", "就在右上角的按钮~", 0, false,false]
+]

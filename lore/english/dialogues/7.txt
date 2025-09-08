@@ -1,0 +1,3 @@
+[
+  ["npc_unicorn", "1", "Little White Horse", "Hello~ Anything you'd like to ask?~", 0, true, false, ["Chroma Credits", 8], ["Holy Light", 9], ["Daily Challenge", 10], ["How did you get here?", 11], ["Nothing", 12]]
+]

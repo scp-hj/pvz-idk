@@ -1,0 +1,4 @@
+[
+  ["npc_jhpcs", "think", "JHPCS", "My intuition tells me that the level ahead  isn't a normal one...", 0, true, false],
+  ["npc_jhpcs", "think", "JHPCS", "Feels like it's related to some mechanism... Let me research it first...", 0, false, false]
+]

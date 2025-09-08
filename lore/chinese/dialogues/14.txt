@@ -1,0 +1,4 @@
+[
+  ["npc_jhpcs","think","JHPCS","解锁了向日葵的话，应该就可以依照一般的pvz思路来了吧……",0,true,false],
+  ["npc_jhpcs","smile","JHPCS","开局攒向日葵，僵尸出来后用豌豆进行输出，适当的时候用小喷菇拖延一下，应该就行了。",0,false,false]
+]

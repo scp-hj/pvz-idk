@@ -1,0 +1,5 @@
+Cattail
+
+Shoots homing stings that follows zombies.
+Have a chance to shoot an electric sting that applies AOE stun.
+Plant it onto another flower to activate plant revolution effect!

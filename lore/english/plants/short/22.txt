@@ -1,0 +1,8 @@
+Sweet Pea
+
+Shoots one of the following projectiles randomly:
+Peppermint: Deal high dmg in 3x3
+Icy Mint: Deal dmg in 3x3 while freezing and chilling zombies.
+Sweet Candy: Stuns, and attracts nearby zombies to this lane.
+
+TLDR; very op

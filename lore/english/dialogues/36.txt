@@ -1,0 +1,5 @@
+[
+  ["npc_jhpcs", "smile", "JHPCS", "Hmm, looks like the shop has been unlocked.", 0, true, false],
+  ["npc_jhpcs", "smile", "JHPCS", "Let's go take a look when we have time.", 0, false, false],
+  ["npc_jhpcs", "wink", "JHPCS", "It's the button in the top right corner~", 0, false, false]
+]

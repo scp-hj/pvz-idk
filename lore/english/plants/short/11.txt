@@ -1,0 +1,4 @@
+Potato Mine
+
+Explodes on contact, yet takes time to arm.
+Extremely fragile when not armed, be careful.

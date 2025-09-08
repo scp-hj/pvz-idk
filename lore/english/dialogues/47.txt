@@ -1,0 +1,7 @@
+[
+  ["npc_sprout", "smile", "Sprout", "So you've managed to catch me after all...", 0, true, false],
+  ["npc_sprout", "smile", "Sprout", "That's no easy feat, you know~", 0, true, false],
+  ["npc_sprout", "smile", "Sprout", "It's nothing really, just came here to hang out for a bit. I'll be leaving soon anyway.", 0, true, false],
+  ["npc_sprout", "smile", "Sprout", "Well, since you're so patient, I'll give you this seed I found~ It looks so much like me, don't get us confused, okay~", 0, true, false],
+  ["npc_sprout", "wink", "Sprout", "I should get going now, so goodbye~ I'm sure we'll meet again someday...", 0, true, false]
+]

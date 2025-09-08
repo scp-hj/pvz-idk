@@ -1,0 +1,17 @@
+{"start_sun": 50, 
+"lane_num": 5, 
+"scene": "lawn_day", 
+"sun_fall": 1,
+"shroom_sleep":1,
+"opening_grave":0,
+"grave_danger":0,
+"max_grave":0, 
+"wave_duration":[1300,600,0],
+"gimicks":["sleep"],
+"level":["0-4: sleepy day","0-4：大睡天"],
+"grave_area":[5,10],
+"sun_fall_duration":[300,600],
+"zombie_spawn":[[1,1],[1,8],[11,11],[12,12],[8,1,11,10,11,1],[1,11,11],[10],[8,8,8,8,8],[11,12,1],[11,11,8,8,12,10]],
+"big_wave":5,
+"unlocks":["random plants",18,"False"]
+}

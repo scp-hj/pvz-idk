@@ -1,0 +1,8 @@
+Buzzzton
+
+Explodes on contact, making 3 random zombies confused.
+Confused zombies walk backwards, stuns and takes dmg periodically,
+and may even spread the confusion even further!
+Whenever there's chaos on the lawn, plant him and it will be resolved.
+
+TLDR; very strong, amazing staller, op

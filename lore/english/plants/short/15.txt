@@ -1,0 +1,6 @@
+Pea Pod
+
+Shoot a number of peas that it determined by the number 
+of heads it has.
+Starts with 1 head, gradually grows and caps at 5.
+Actually has 3x the hp of a normal plant so use it to stall?

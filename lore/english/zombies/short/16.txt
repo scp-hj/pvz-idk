@@ -1,0 +1,9 @@
+Lost Ranger
+
+Shoots spectral arrows that makes plants unselectable.
+Unselectable plants will be ignored by zombies.
+When no plants are in range, become unselectable.
+When there's no plants in the current lane that is selectable and
+can be attacked by Ranger,
+shoots a beam that deals extremely high real dmg to all plants
+in lane.

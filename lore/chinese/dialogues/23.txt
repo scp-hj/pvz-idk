@@ -1,0 +1,6 @@
+[
+  ["npc_jhpcs","think","JHPCS","小鬼僵尸……",0,true,false],
+  ["npc_jhpcs","smile","JHPCS","看来它们由于个子不高，从而无法被豌豆射手这样的植物攻击到。",0,false,false],
+  ["npc_jhpcs","smile","JHPCS","用新获得的雪梨加特林就没问题啦。",0,false,false],
+  ["npc_jhpcs","wink","JHPCS","所以你就不用自卑啦，个子矮也是有个子矮的好处的~",0,false,false,["我看你也不相仲伯",24],["你在胡说些什么",25]]
+]

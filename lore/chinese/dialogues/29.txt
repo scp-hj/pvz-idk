@@ -1,0 +1,5 @@
+[
+  ["npc_sprout","smile","???","哼哼……",0,true,false],
+  ["npc_sprout","smile","???","果然难不倒你们呢。",0,true,false],
+  ["npc_jhpcs","surprise","JHPCS","你-你怎么……",1,true,"npc_sprout_smile.png",["你们认识？",33]]
+]

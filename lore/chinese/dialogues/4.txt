@@ -1,0 +1,13 @@
+[
+  ["npc_jhpcs","think","JHPCS","你可能会想问...",0,true,false],
+  ["npc_jhpcs","smile","JHPCS","为啥我们要种植植物抵御僵尸，防止它们吃掉‘脑子’？",0,false,false],
+  ["npc_jhpcs","smile","JHPCS","毕竟，我可没有脑部器官，",0,false,false],
+  ["npc_jhpcs","think","JHPCS","而你……",0,false,false],
+  ["npc_jhpcs","smile","JHPCS","看你的长相，也不是像有脑生物的样子。",0,false,false],
+  ["npc_jhpcs","wink","JHPCS","（不是在嘲讽你啦~）",0,false,false],
+  ["npc_jhpcs","smile","JHPCS","虚空中漂浮的这些世界，往往具有各种奇异，甚至违反常规的‘规则’。",0,false,false],
+  ["npc_jhpcs","smile","JHPCS","不光是种植物打僵尸。",0,false,false],
+  ["npc_jhpcs","smile","JHPCS","我游历过的某些世界，‘规则’限定人们操控黄色生物，游走在电子迷宫中觅食黄色像素点，同时躲避四色的幽灵；",0,false,false],
+  ["npc_jhpcs","think","JHPCS","有说这种奇异的‘规则’是随机生成的，但……我能感到，在某些环节，‘规则’似乎刻意地在引导我们这样的旅者，似乎透出认人为设计的气息。",0,false,false],
+  ["npc_jhpcs","think","JHPCS","对不起……好像自顾自地讲了很多呢。我们还是继续闯关吧。",0,false,false,["行",5],["那你也是刚到这里不久吧，咋对这里的规则轻车熟路的样子",6]]
+]
