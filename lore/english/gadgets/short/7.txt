@@ -1,0 +1,4 @@
+Bribe
+
+Spend 50 suns to stun all zombies in a tile for 4s.
+Give them Greed's curse for 20s.

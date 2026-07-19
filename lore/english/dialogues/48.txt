@@ -1,0 +1,3 @@
+[
+  ["npc_jhpcs","think","JHPCS","The store sign is getting loose... It looks like it's gonna fall down in 3 or 4 hits...",0,true,false]
+]
