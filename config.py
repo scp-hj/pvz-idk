@@ -8,7 +8,7 @@ class global_var:
     'events':[],'seed_packets':None,'grave_ratio':[1,1,1,1,1,2,2,2,2,2,3,3,3,3,3,4,4,5]
     ,'plant_largest_id':0,'state':'leveling','difficulty':1,'specials':[],'hard_mode':False,
           'grave_num': 0, 'lanes': [{'obstacles': [], 'plants':[], 'zombies':[]} for a in range(100)],'pos_shift':(0,0),
-          'images':dict(),'on_scene':('title_screen',0),'dev_pass':'ellieiloveu','for_real?':'no',
+          'images':dict(),'on_scene':('title_screen',0),'dev_pass':'youdirtyhackerstayaway','for_real?':'no',
           'key_press':'','DT':0.005,'dt':0.003,'scene':None,'sun_data':['','yellow'],'seed_selection':None,
           'money':0,'paused':False,'language':'chinese','new':False,'newest_plant':None,'factors':[1,1],
           'window size':[900,640],'full screen':False,'window pos shift':[0,0],
