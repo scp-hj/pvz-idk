@@ -1861,14 +1861,14 @@ def get_obstacles_in(xstart, xend, ystart, yend):
 def get_zombies_at(x, y):
     objects = []
     for plant in get_value('zombies'):
-        if (plant.x+20)//90 == x and plant.lane == y+1 and not plant.unselected:
+        if (plant.x+20)//90 == x and plant.lane == y and not plant.unselected:
             objects.append(plant)
     return objects
 
 
 def get_zombies_in(xstart, xend, ystart, yend):
     xs = [x for x in range(xstart-1, xend)]
-    ys = [y for y in range(ystart-1, yend)]
+    ys = [y for y in range(ystart, yend+1)]
     objects = []
     for x in xs:
         for y in ys:

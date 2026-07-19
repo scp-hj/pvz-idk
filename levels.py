@@ -125,7 +125,8 @@ def load_game():
                   'unlocked_plants':[1],
                   'unlocked_powerups':[0],'money':0,
                   'language':'chinese','chromas':0,'unlocked_features':[],'unlocked_stages':[1],
-                  'last_daily_seed':0,'completed_daily':0,'time':'day','seed_limit':6,'seen_dialogues':[]}
+                  'last_daily_seed':0,'completed_daily':0,'time':'day','seed_limit':6,'seen_dialogues':[],
+                  'last_greed_week':0,'greed_sign_broken':False}
             json.dump(data,f)
         set_value('new',True)
     set_value('data',data)
@@ -212,12 +213,21 @@ def random_lanes(zombies=['basics'], lane=[1,2,3,4,5]):
             lanes=adjust_power_distribution(lanes,get_power_map(lanes),zombie_num,10000,lane)
     return lanes
 def spawn_zombies(lane_map):
+    greed = 'greed_mode' in get_value('specials')
     for lane in range(len(lane_map)):
         for zombie in lane_map[lane]:
             if lane+1 not in get_value('level').available_lanes:
                 lane=random.choice(get_value('level').available_lanes)-1
-            get_value('zombies').add(ZOMBIE_CLASSES[zombie](
-                (random.randint(950, 1150), 90+(lane)*90)))
+            z=ZOMBIE_CLASSES[zombie](
+                (random.randint(950, 1150), 90+(lane)*90))
+            if greed:
+                # permanent buffs: ignore plants, drop coins, ignore mowers, very fast
+                z.effect['haste'] = 99999999
+                z.effect['greed_curse'] = 99999999
+                z.effect['phantom'] = 99999999
+                z.og_speed = z.og_speed * 3.0
+                z.speed = z.og_speed
+            get_value('zombies').add(z)
 
 
 def spawn_zombie(zombies, lanes):
@@ -267,6 +277,7 @@ class Level():
         self.max_grave = level_setup['max_grave']
         self.wave_duration=level_setup['wave_duration']
         self.gimmicks=level_setup['gimicks']
+        self.greed_mode = 'greed_mode' in self.gimmicks
         self.end_dialogue=level_setup.get('end_dialogue')
         self.start_dialogue=level_setup.get('start_dialogue')
         self.win_dialogue=level_setup.get('win_dialogue')
@@ -555,7 +566,7 @@ class Level():
                             self.uis.add(LevelEnd((random.randint(100,600),random.randint(100,500)),get_value('images')['chroma_credit.png'][tuple()],self))
                    
                     L=LevelEnd((random.randint(100,600),random.randint(100,500)),get_value('images')['money_bag.png'][tuple()],self)
-                    L.coin=random.randint(6,16)
+                    L.coin=random.randint(25,50) if self.greed_mode else random.randint(6,16)
                     self.uis.add(L)
             else:
                 if (self.wave==0 and int(self.wave_fps)>self.wave_duration[0]+140) or (self.wave>0 and (self.wave_fps>=self.wave_duration[1] or (len(get_value('zombies').sprites())==0 and self.wave_fps>=self.wave_duration[2]))):
@@ -605,7 +616,7 @@ class Level():
                                             self.uis.add(LevelEnd((random.randint(100,600),random.randint(100,500)),get_value('images')['chroma_credit.png'][tuple()],self))
                                    
                                     L=LevelEnd((random.randint(100,600),random.randint(100,500)),get_value('images')['money_bag.png'][tuple()],self)
-                                    L.coin=random.randint(6,16)
+                                    L.coin=random.randint(25,50) if self.greed_mode else random.randint(6,16)
                                     self.uis.add(L)
             if (not self.wave == 1 and not self.wave==2) and self.wave % 10 == 0 and self.wave_fps == 0 and self.level_start:
                 if get_value('difficulty')<5:
@@ -620,9 +631,15 @@ class Level():
                     
             #*dies*
             if get_value('state')!='dead':
-                for zombie in self.zombies:
-                    if zombie.x<=-50:
-                        self.die()
+                if self.greed_mode:
+                    # no lose condition; quietly despawn zombies that leave the screen
+                    for zombie in list(self.zombies):
+                        if zombie.x<=-220:
+                            zombie.kill()
+                else:
+                    for zombie in self.zombies:
+                        if zombie.x<=-50:
+                            self.die()
             else:
                 self.return_timer-=get_value('equivalent_frame')
                 set_value('specials',[])
@@ -661,6 +678,10 @@ class Level():
         self.return_timer=125
     def gimmick_setup(self):
         #gimmick set up
+        if self.greed_mode:
+            data=get_value('data')
+            data['last_greed_week']=current_week_key()
+            save(data)
         if 'last_stand' in self.gimmicks:
             self.uis.add(LetsRock((700,90),self))
             self.level_start=False
@@ -901,7 +922,50 @@ def generate_level(zombies):
         waves.append(wave)
     
     return waves
-  
+
+
+def current_week_key():
+    """A stable integer that uniquely identifies the current ISO week.
+    Used for the once-per-week Greed Mode cooldown."""
+    import datetime
+    iso = datetime.datetime.now().isocalendar()
+    return iso[0] * 100 + iso[1]
+
+
+def greed_mode_level():
+    """Greed Mode: a high-energy, no-lose coin-farming level. Spawns only
+    BasicZombie + Imp hordes; all zombies are permanently hasted (ignore
+    plants), greed-cursed (drop coins), phantom (ignore lawnmowers) and
+    move at extreme speed. Reaching the lane end does NOT trigger a loss.
+    Playable once per week (see GreedModeButton / gimmick_setup)."""
+    level = dict()
+    level['lanes'] = [1, 2, 3, 4, 5]
+    level['lane_num'] = 5
+    level['scene'] = 'void'
+    level['sun_fall'] = 1
+    level['start_sun'] = 750
+    level['shroom_sleep'] = 0  # night scene: mushrooms awake
+    level['opening_grave'] = 0
+    level['grave_danger'] = 0
+    level['max_grave'] = 0
+    level['grave_area'] = [9, 10]
+    # short, punchy waves for a relentless horde feel
+    level['wave_duration'] = [900, 250, 80]
+    level['gimicks'] = ['greed_mode']
+    level['level'] = ['Greed Mode!', '贪婪模式！']
+    level['sun_fall_duration'] = [250, 350]
+    level['big_wave'] = 100  # no flag zombies / wave banners in greed mode
+    # 4-element unlocks: no plant/powerup/feature/chroma, does NOT mark daily
+    level['unlocks'] = ['False', 'False', 7, 'False']
+    # 16 escalating waves of basics + imps (keys: 1=BasicZombie, 8=Imp)
+    waves = []
+    for w in range(16):
+        basics = 6 + w            # 6 -> 21
+        imps = 2 + w // 2         # 2 -> 9
+        waves.append([1] * basics + [8] * imps)
+    level['zombie_spawn'] = waves
+    return level
+
 #scene stuff
 def switch_scene(scene):
     print('pos',get_value('pos_shift'))
@@ -1237,7 +1301,15 @@ class Shop():
                 if cnt>3:
                     row+=1
                     cnt=0
-        start_dialogue("37")
+        # greed mode: sign guards the entry, or button if already broken
+        if get_value('data').get('greed_sign_broken',False):
+            add_greed_mode_uis(self.uis)
+        else:
+            self.uis.add(GreedShopSign())
+            if 'void_1-16' in get_value('data').get('unlocked_levels'):
+                start_dialogue("48")
+            else:
+                start_dialogue("37")
     def refresh(self):
             
         self.uis=pygame.sprite.Group()
@@ -1272,6 +1344,11 @@ class Shop():
                 if cnt>3:
                     row+=1
                     cnt=0
+        # greed mode: sign guards the entry, or button if already broken
+        if get_value('data').get('greed_sign_broken',False):
+            add_greed_mode_uis(self.uis)
+        else:
+            self.uis.add(GreedShopSign())
     def update(self,events,screen):
         blity(self.image,(0,0))
         self.uis.update(screen,events)
@@ -1283,7 +1360,7 @@ class Shop():
 SUN_PRODUCING_PLANTS=[2,6,30]
 SPECIAL_ICON_LIST=['flag_crowd','flag_deadly','flag_turbo','flag_shield','thunderstorm',
                    'blind','grave','sleep','locked and loaded',
-                   'random graves','double power','save our seeds']
+                   'random graves','double power','save our seeds','greed_mode']
 FEATURE_IMAGE={1:'npc_unicorn_1.png',2:'nut_cracker_powerup.png',3:'shop_icon.png'}
 NIGHT_SCENES=['lawn_night','lawn_night_1']
 SHOP_LIST={'plants':{9:500,12:750,18:750,

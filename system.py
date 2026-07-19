@@ -178,13 +178,17 @@ class Gadget(pygame.sprite.Sprite):
             else:
                 self.target=None
             blity(get_value('images')['tile_select.png'][tuple()],(self.tile[0]*90-90+75,self.tile[1]*90-90+100))
-        if self.kind=='place_stuff':
+        elif self.kind=='place_stuff':
             self.tile=(int(self.x//90),int(self.y//90))
             if len(get_plants_at(self.x//90,self.y//90))<=0 and len(get_obstacles_at(self.x//90,self.y//90))<=0:
                 self.location=self.tile
                 blity(get_value('images')['tile_select.png'][tuple()],(self.tile[0]*90-90+75,self.tile[1]*90-90+100))
             else:
                 self.location=None
+        elif self.kind=='select_tile':
+            self.tile=(int(self.x//90),int(self.y//90))
+            self.location=self.tile
+            blity(get_value('images')['tile_select.png'][tuple()],(self.tile[0]*90-90+75,self.tile[1]*90-90+100))
         for event in events:
             if event.type==pygame.MOUSEBUTTONDOWN:
                 if pygame.mouse.get_pressed()[0]:
@@ -198,10 +202,15 @@ class Gadget(pygame.sprite.Sprite):
                             return
                         else:
                             self.effect(self.location)
+                    elif self.kind=='select_tile':
+                        self.effect(self.location)
                     self.kill()
                     if self.mother:
                         self.mother.recharge_countdown=self.mother.recharge
-                        self.mother.use_chance-=1
+                        if self.mother.cost==0:
+                            self.mother.use_chance-=1
+                        else:
+                            set_value('sun',get_value('sun')-self.mother.cost)
                 else:
                     self.kill()
     def effect(self):
@@ -889,6 +898,125 @@ class DailyChallenge(Button):
         sounds.play('click2',1)
         pygame.event.post(pygame.event.Event(LEVEL_START))
         set_value('request_object',[None,random_level()])
+class GreedModeButton(Button):
+    """Entry point for the weekly Greed Mode coin-farm level. Reuses the
+    GreedCurser gadget icon. Locked once the player commits to the level
+    (gimmick_setup records last_greed_week after seed selection), so quitting
+    during seed selection remains forgiving but the weekly attempt is consumed
+    once play truly begins. Located on the Shop page behind the GreedShopSign,
+    revealed only after the sign is broken."""
+    def __init__(self):
+        super().__init__((213,420),'greed_curser.png','hit','black')
+        import levels
+        self.locked = levels.current_week_key()==get_value('data').get('last_greed_week',0)
+    def update(self,screen,events):
+        super().update(screen,events)
+    def on_clicked(self):
+        import levels
+        if levels.current_week_key()==get_value('data').get('last_greed_week',0):
+            sounds.play('click2',1)
+            return
+        sounds.play('click2',1)
+        pygame.event.post(pygame.event.Event(LEVEL_START))
+        set_value('request_object',[None,levels.greed_mode_level()])
+def add_greed_mode_uis(uis):
+    """Add the GreedModeButton and its bilingual weekly status label to the
+    given sprite group. Used by the Shop page (when the sign is already
+    broken) and by GreedShopSign (when the fall animation finishes)."""
+    import levels
+    uis.add(GreedModeButton())
+    _greed_done = levels.current_week_key()==get_value('data').get('last_greed_week',0)
+    if get_value('language')=='chinese':
+        if _greed_done:
+            uis.add(SmartText('贪婪模式（本周已完成）',(148,508),18,18,30,(120,120,120)))
+        else:
+            uis.add(SmartText('贪婪模式（每周一次）',(153,508),18,18,30,(180,140,0)))
+    else:
+        if _greed_done:
+            uis.add(SmartText('Greed Mode (done this week)',(120,508),13,40,20,(120,120,120)))
+        else:
+            uis.add(SmartText('Greed Mode (weekly)',(150,508),15,40,20,(180,140,0)))
+class GreedShopSign(pygame.sprite.Sprite):
+    """A breakable shop sign guarding the Greed Mode entry on the Shop page.
+    Only becomes interactable after the main adventure is beaten (1-15, which
+    unlocks void_1-16). When locked the sign is darkened (black filter). Once
+    unlocked it highlights on hover (hit filter) and shakes when clicked.
+    After 3 clicks the sign topples over (pop-up + gravity + rotation fall
+    animation) and permanently reveals the GreedModeButton beneath."""
+    def __init__(self):
+        super().__init__()
+        self.x,self.y=46,324
+        self.img_normal=get_value('images')['greed_shop_sign.png'][tuple()]
+        self.img_hit=get_value('images')['greed_shop_sign.png'][('hit',)]
+        self.img_black=get_value('images')['greed_shop_sign.png'][('black',)]
+        self.image=self.img_normal
+        self.rect=self.image.get_rect(topleft=(self.x,self.y))
+        data=get_value('data')
+        # interactable only after 1-15 beaten (it unlocks void_1-16)
+        self.adventure_done='void_1-16' in data['unlocked_levels']
+        self.broken=data.get('greed_sign_broken',False)
+        self.clicks=0
+        self.shake_timer=0
+        self.falling=False
+        self.fall_y=0.0
+        self.fall_vy=0.0
+        self.fall_rot=0.0
+        self.play_sound=True
+    def update(self,screen,events):
+        if self.broken and not self.falling:
+            return
+        if self.falling:
+            self.fall_vy+=0.8
+            self.fall_y+=self.fall_vy
+            self.fall_rot+=7.0
+            if self.fall_y>500:
+                self.falling=False
+                self.broken=True
+                add_greed_mode_uis(get_value('uis'))
+                self.kill()
+                return
+            img=pygame.transform.rotate(self.img_normal,int(self.fall_rot))
+            rect=img.get_rect(center=(self.x+self.img_normal.get_width()//2,
+                                       self.y+self.img_normal.get_height()//2+int(self.fall_y)))
+            blity(img,(rect.x,rect.y),True)
+            return
+        # normal rendering
+        if not self.adventure_done:
+            pass
+        else:
+            if self.rect.collidepoint(get_pos()):
+                self.image=self.img_hit
+                if self.play_sound:
+                    sounds.play('select',0.5)
+                    self.play_sound=False
+            else:
+                self.play_sound=True
+                self.image=self.img_normal
+        ox,oy=0,0
+        if self.shake_timer>0:
+            ox=random.randint(-5,5)
+            oy=random.randint(-3,3)
+            self.shake_timer-=1
+        blity(self.image,(self.x+ox,self.y+oy),True)
+        for event in events:
+            if self.adventure_done:
+                if (event.type==pygame.MOUSEBUTTONDOWN
+                    and self.rect.collidepoint(get_pos())
+                    and not get_value('in_dialogue')
+                    and not get_value('planting')):
+                    self.clicks+=1
+                    self.shake_timer=18
+                    if self.clicks>=3:
+                        sounds.play('grave_die',1)
+                        self.falling=True
+                        self.fall_vy=-6.0
+                        data=get_value('data')
+                        data['greed_sign_broken']=True
+                        import levels
+                        levels.save(data)
+                    else:
+                        sounds.play('click2',1)
+                    break
 class BackMainMenu(Button):
     def __init__(self,pos,scene):
         super().__init__(pos,'goooooo.png','hit','black',singular=False)
@@ -1052,6 +1180,21 @@ class GlovePlace(Gadget):
         lane.insert(0,self.plant)
         lanes[target[1]-1]['plants']=lane
         set_value('lanes',lane)
+
+class GreedCurser(Gadget):
+    def __init__(self,mother):
+        super().__init__('greed_curser.png',mother,'select_tile')
+    def effect(self,target):
+        sounds.play('ghost_beam',0.5)
+        get_value('particles_-2').add(GreedCurseBurst((target[0]*90+45, target[1]*90+85)))
+        for zombie in get_zombies_at(target[0],target[1]):
+            zombie.effect['greed_curse']=500
+            zombie.stop_timer+=100
+            zombie.damage(1,'physical','pierce',True)
+            get_value('particles_-2').add(GreedCoinSpark((zombie.x+20, zombie.y+40)))
+
+
+
 #windows
 class HelpWindow(Window):
     def __init__(self):  # [['text',text_pos,text_size,text_color],...]
@@ -1774,6 +1917,9 @@ class LastStand(PowerUp):
 class GardeningGlove(PowerUp):
     def __init__(self):
         super().__init__('glove_powerup.png',(495+163,535+6),1,1,100,6,gadget=Glove)
+class Bribe(PowerUp):
+    def __init__(self):
+        super().__init__('powerup_bribe.png',(495+163,535+6),5,5,50,7,gadget=GreedCurser,sun_needed=50)
 class ShopPacket(pygame.sprite.Sprite):
     def __init__(self,pos):
         super().__init__()
@@ -1872,10 +2018,13 @@ class SelectingSeed(pygame.sprite.Sprite):
         self.packet=packet
         self.hover_time=0
         self.lore=False
+        self.revealed=False
+        self.dup_index=0
         if 'last_stand' in get_value('level').gimmicks and self.plant_id in SUN_PRODUCING_PLANTS:
-            print('im disabled')
             self.disabled=True
     def update(self, screen, events):
+        if not self.revealed:
+            return
         self.rect = self.image.get_rect(
             center=(self.x+self.image.get_width()//2, self.y+self.image.get_height()//2))
         if not self.disabled:
@@ -1884,7 +2033,7 @@ class SelectingSeed(pygame.sprite.Sprite):
             if self.hover_time<5:
                 self.hover_time+=1
             if self.hover_time>=5:
-                if not self.lore:
+                if not self.lore and self.dup_index==0:
                     get_value('uber_uis').add(ShortPlantLore(self))
                     self.lore=True
         else:
@@ -1969,28 +2118,38 @@ class SelectingSeeds(pygame.sprite.Group):
         self.seeds=seeds
         self.width=width
         self.done_seeds=None
+        self._revealed=False
+        self._populate()
+    def _populate(self):
+        #deterministic one-shot population. Exactly `dup_limit` sprites are
+        #created per unlocked plant: 2 when 'double power' is active (lets the
+        #player pick the same plant twice, per lore/specials/double power.txt),
+        #1 otherwise. This replaces the old frame-counter window + time.sleep
+        #throttle, whose duplicate count depended on machine speed / exe build.
+        gimmicks=get_value('level').gimmicks
+        dup_limit=2 if 'double power' in gimmicks else 1
+        cnt=0
+        cct=0
+        for pid in self.seeds:
+            if pid in get_value('data')['unlocked_plants']:
+                cnt+=1
+                see_=SEEDS_WITH_ID[pid]((10000,100000))
+                for dup in range(dup_limit):
+                    seed=SelectingSeed((50+50*cnt,100+cct*60),see_.image1,SEEDS_WITH_ID[pid],self.selected_seeds,plant_id=pid)
+                    seed.dup_index=dup
+                    self.add(seed)
+                if cnt%self.width==0:
+                    cnt=0
+                    cct+=1
     def update(self,screen,events):
         self.selected_seeds.update(screen,events)
         self.menu.update()
+        if not self._revealed and self.menu.y<=0:
+            self._revealed=True
+            for seed in self:
+                seed.revealed=True
         for seed in self:
             seed.update(screen,events)
-        if abs(int(get_value('level').idk)-77)<=2:
-                
-            self.cnt=0
-            self.cct=0
-            for seed in self.seeds:
-                if seed in get_value('data')['unlocked_plants']:
-                    self.cnt+=1
-                    see_=SEEDS_WITH_ID[seed]((10000,100000))
-                    seed=SelectingSeed((50+50*self.cnt,100+self.cct*60),see_.image1,SEEDS_WITH_ID[seed],self.selected_seeds,plant_id=seed)
-                    if not 'double power' in get_value('scene').gimmicks:
-                        time.sleep(0.005)
-                        print(seed)
-                    self.add(seed)
-                    if self.cnt%self.width==0:
-                        self.cnt=0
-                        self.cct+=1
-            print(self)
     def fugging_end_this(self):
         self.done_seeds=[]
         for seed in self.selected_seeds:
@@ -2279,7 +2438,8 @@ SEEDS_WITH_ID={1:PeaSeed,2:SunflowerSeed,3:RepeaterSeed,4:SnowPeaSeed,5:Puffshro
                 15:PeapodSeed,16:FirepeaSeed,17:ShadowShroomSeed,18:BuzzztonSeed,19:TallnutSeed,20:MagnoliaSeed,21:CherrySeed,
                22:SweetpeaSeed,23:TorchSeed,24:FireWeedSeed,25:CoffeeBeanSeed,26:WWMSeed,27:ChomperSeed,28:SproutSeed,
                29:PlanternSeed,30:PowerflowerSeed}
-POWERUPS_WITH_ID={0:Nut,1:Blizzard,2:PlantFoodPacket,3:MagicalRandomness,4:FriedChicken,5:LastStand,6:GardeningGlove}
+POWERUPS_WITH_ID={0:Nut,1:Blizzard,2:PlantFoodPacket,3:MagicalRandomness,4:FriedChicken,5:LastStand,6:GardeningGlove,
+                  7:Bribe}
 SUN_PRODUCING_PLANTS=[2,6,30]
 NPC_DIALOGUES={'unicorn_0':
                [{'chinese':['每日关卡，等你挑战~☆','星虹代币等待着它的主人~☆'],

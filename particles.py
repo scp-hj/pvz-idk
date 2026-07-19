@@ -1,4 +1,4 @@
-import pygame,os,sys
+import pygame,os,sys,math
 from time import *
 from PIL import Image
 import cv2 as cv
@@ -32,7 +32,7 @@ def cv2_2_pygame(cv2Image):
         cv2Image = (cv2Image / 256).astype('uint8')
     size = cv2Image.shape[1::-1]
     if len(cv2Image.shape) == 2:
-        cv2Image = np.repeat(cv2Image.reshape(size[1], size[0], 1), 3, axis=2)
+        cv2Image = numpy.repeat(cv2Image.reshape(size[1], size[0], 1), 3, axis=2)
         format = 'RGB'
     else:
         format = 'RGBA' if cv2Image.shape[2] == 4 else 'RGB'
@@ -289,6 +289,9 @@ class FlagAggro(Particle):
 class FlagDeadly(Particle):
     def __init__(self, pos,target):
         super().__init__(r'smol_skeleton.png', pos, 1,target)
+class GreedCurse(Particle):
+    def __init__(self, pos,target):
+        super().__init__(r'greed_curse.png', pos, 1,target)
 class Intoxicated(Particle):
     def __init__(self, pos,target):
         super().__init__(r'intoxicated.png', pos, 1,target)
@@ -301,6 +304,8 @@ class EffectPowerflower(Particle):
 class Fungus(Particle):
     def __init__(self, pos,target):
         super().__init__(r'fungus.png', pos, 1,target)
+
+
 class Graftable(Particle):
     def __init__(self, pos,target):
         super().__init__(r'grafting_upgrade.png', pos, 1,target,free=True)
@@ -484,3 +489,104 @@ class ObjectFly(pygame.sprite.Sprite):
                 break
         set_value('lanes', lane)
         pass
+
+
+# --- GreedCurser coin particles ---
+class GreedCurseBurst(Particle):
+    """A greedy coin vortex: coins spiral inward to a cursed core, then
+    burst outward as the curse 'pays out'. Spawns at a tile position.
+    Uses the existing copper/silver/gold/legendary coin assets."""
+    def __init__(self, pos):
+        super().__init__('copper_coin_0.png', pos, 55, None, free=True)
+        self.cx, self.cy = pos
+        self.coin_images = [
+            get_value('images')['copper_coin_0.png'][tuple()],
+            get_value('images')['silver_coin_0.png'][tuple()],
+            get_value('images')['gold_coin_0.png'][tuple()],
+            get_value('images')['legendary_coin_0.png'][tuple()],
+        ]
+        # weighted: mostly copper/silver, occasional gold, rare legendary
+        self.coins = []
+        for _ in range(14):
+            self.coins.append({
+                'tier': random.choice([0, 0, 0, 0, 1, 1, 1, 2, 2, 3]),
+                'ang0': random.uniform(0, 6.283),
+                'spin': random.uniform(6, 14) * random.choice([-1, 1]),
+                'rmax': random.uniform(55, 75),
+            })
+
+    def display(self):
+        try:
+            screen = get_value('screen')
+            t = self.cnt / self.duration  # 0..1
+            pulse = 1 - abs(t - 0.5) * 2  # peaks at mid
+            # cursed ground glow: purple ring + green inner core
+            gr = int(16 + 34 * pulse)
+            glow = pygame.Surface((gr * 2 + 6, gr * 2 + 6), pygame.SRCALPHA)
+            pygame.draw.circle(glow, (40, 90, 30, int(95 * pulse)), (gr + 3, gr + 3), gr)
+            pygame.draw.circle(glow, (60, 20, 80, int(80 * pulse)), (gr + 3, gr + 3), max(1, gr - 7))
+            pygame.draw.circle(glow, (180, 230, 120, int(150 * pulse)), (gr + 3, gr + 3), max(1, gr - 14))
+            screen.blit(glow, (self.cx - gr - 3, self.cy - gr - 3))
+            for c in self.coins:
+                if t < 0.5:
+                    # converge inward
+                    tt = t / 0.5
+                    radius = c['rmax'] * (1 - tt)
+                    ang = c['ang0'] + c['spin'] * tt
+                    alpha = 255
+                    scale = 0.55 + 0.45 * tt
+                else:
+                    # burst outward + fade
+                    tt = (t - 0.5) / 0.5
+                    radius = c['rmax'] * tt * 1.25
+                    ang = c['ang0'] + c['spin'] + c['spin'] * tt * 1.4
+                    alpha = int(255 * (1 - tt))
+                    scale = 0.95 - 0.5 * tt
+                scale = max(0.1, scale)
+                px = self.cx + math.cos(ang) * radius
+                py = self.cy + math.sin(ang) * radius * 0.6  # squashed for ground perspective
+                sized = pygame.transform.rotozoom(self.coin_images[c['tier']], c['spin'] * t * 40, scale)
+                if alpha < 255:
+                    sized.set_alpha(alpha)
+                rect = sized.get_rect(center=(int(px), int(py)))
+                screen.blit(sized, rect)
+        except Exception:
+            pass
+
+
+class GreedCoinSpark(Particle):
+    """A small parabolic spray of coins flying off a greed-cursed zombie
+    when the GreedCurser strikes it. Purely visual (non-collectible)."""
+    def __init__(self, pos):
+        super().__init__('copper_coin_0.png', pos, 30, None, free=True)
+        self.cx, self.cy = pos
+        self.coin_images = [
+            get_value('images')['copper_coin_0.png'][tuple()],
+            get_value('images')['silver_coin_0.png'][tuple()],
+            get_value('images')['gold_coin_0.png'][tuple()],
+        ]
+        self.coins = []
+        for _ in range(6):
+            self.coins.append({
+                'tier': random.choice([0, 0, 1, 1, 2]),
+                'vx': random.uniform(-2.5, 2.5),
+                'vy': random.uniform(-3.6, -1.6),  # upward (negative y)
+                'grav': random.uniform(0.16, 0.30),
+                'spin': random.uniform(8, 18) * random.choice([-1, 1]),
+            })
+
+    def display(self):
+        try:
+            screen = get_value('screen')
+            t = self.cnt / self.duration  # 0..1
+            for c in self.coins:
+                px = self.cx + c['vx'] * t * 25
+                py = self.cy + c['vy'] * t * 25 + c['grav'] * 200 * t * t
+                alpha = int(255 * (1 - t))
+                scale = max(0.2, 0.8 - 0.5 * t)
+                sized = pygame.transform.rotozoom(self.coin_images[c['tier']], c['spin'] * t * 30, scale)
+                sized.set_alpha(alpha)
+                rect = sized.get_rect(center=(int(px), int(py)))
+                screen.blit(sized, rect)
+        except Exception:
+            pass

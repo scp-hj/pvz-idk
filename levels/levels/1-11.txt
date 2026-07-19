@@ -7,7 +7,7 @@
     "opening_grave": 0,
     "grave_danger": 0,
     "max_grave": 0,
-    "wave_duration": [0.1150, 0.550, 0.300],
+    "wave_duration": [1150, 550, 300],
     "level": ["1-11","1-11"],
     "gimicks": [],
     "grave_area": [5,10],

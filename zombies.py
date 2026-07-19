@@ -36,7 +36,7 @@ def cv2_2_pygame(cv2Image):
         cv2Image = (cv2Image / 256).astype('uint8')
     size = cv2Image.shape[1::-1]
     if len(cv2Image.shape) == 2:
-        cv2Image = np.repeat(cv2Image.reshape(size[1], size[0], 1), 3, axis=2)
+        cv2Image = numpy.repeat(cv2Image.reshape(size[1], size[0], 1), 3, axis=2)
         format = 'RGB'
     else:
         format = 'RGBA' if cv2Image.shape[2] == 4 else 'RGB'
@@ -239,7 +239,7 @@ class Zombie(pygame.sprite.Sprite):
         self.stop_timer=0
         self.effects=''
         self.effect={'confusion':-1,'overheat':-1,'fungus':-1,
-                     'unselectable':-1,'haste':-1,'phantom':-1,'invincible':-1}
+                     'unselectable':-1,'haste':-1,'phantom':-1,'invincible':-1,'greed_curse':-1}
         #confusion: walk backwards, stun & dmg, spreads
         #overheat: speed up, high rate dmg
         #fungus: random speed (overall slower) spawns puffshroom when dead
@@ -465,6 +465,9 @@ class Zombie(pygame.sprite.Sprite):
             if self.effect['fungus']>0:
                 get_value('particles_0').add(
                         Fungus((self.x, self.rect[1]+self.rect[3]-self.height-10-15), self))
+            if self.effect['greed_curse']>0:
+                get_value('particles_0').add(
+                        GreedCurse((self.x, self.rect[1]+self.rect[3]-self.height-10-15), self))
         for armor in self.armors:
             armor.update()
         #recharge skills
@@ -599,7 +602,16 @@ class Zombie(pygame.sprite.Sprite):
     def setup_rect(self):
         pass
     def on_hit(self):
-        pass
+        if self.effect['greed_curse']>0:
+            if random.randint(1,20)==1:
+                get_value('resources').add(Coin((self.x+20,self.y+40),(self.x+1,self.y+61),1))
+            elif random.randint(1,40)==1:
+                get_value('resources').add(Coin((self.x+20,self.y+40),(self.x+1,self.y+61),4))
+            elif random.randint(1,100)==1:
+                get_value('resources').add(Coin((self.x+20,self.y+40),(self.x+1,self.y+61),10))
+            elif random.randint(1,2000)==1:
+                get_value('resources').add(Coin((self.x+20,self.y+40),(self.x+1,self.y+61),69))
+
     def special(self):
         pass
     def blit(self):
@@ -618,6 +630,16 @@ class Zombie(pygame.sprite.Sprite):
                 get_value('resources').add(Coin((self.x+20,self.y+40),(self.x+1,self.y+61),10))
             elif random.randint(1,2000)==1:
                 get_value('resources').add(Coin((self.x+20,self.y+40),(self.x+1,self.y+61),69))
+            if self.effect['greed_curse']>0:
+                for i in range(20):
+                    if random.randint(1,20)==1:
+                        get_value('resources').add(Coin((self.x+20,self.y+40),(self.x+1,self.y+61),1))
+                    elif random.randint(1,40)==1:
+                        get_value('resources').add(Coin((self.x+20,self.y+40),(self.x+1,self.y+61),4))
+                    elif random.randint(1,100)==1:
+                            get_value('resources').add(Coin((self.x+20,self.y+40),(self.x+1,self.y+61),10))
+                    elif random.randint(1,2000)==1:
+                        get_value('resources').add(Coin((self.x+20,self.y+40),(self.x+1,self.y+61),69))
             if self.effect['fungus']>0:
                 if not get_objects_at(self.column,self.lane):
                     plant(self.column,self.lane, get_value('plants'),
@@ -2244,7 +2266,7 @@ def get_obstacles_in(xstart,xend,ystart,yend):
 def get_zombies_at(x, y):
     objects = []
     for plant in get_value('zombies'):
-        if (plant.x+20)//90 == x and plant.lane == y and plant.effect['unselectable']<=0:
+        if (plant.x+20)//90 == x and plant.lane == y and not plant.unselected:
             objects.append(plant)
     return objects
 
